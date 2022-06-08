@@ -1,0 +1,118 @@
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+// https://fonts.adobe.com/fonts/playfair
+
+// Font Family
+// $font-family: 'Source Sans Pro', sans-serif;
+@import "./fonts";
+
+// $primary: #007cc2;
+
+
+
+
+// START: Primary Font ==============
+// ====================================
+$primary_font-regular: (
+    font-family: $primary_font,
+    font-weight: 400,
+    font-style: normal
+);
+
+$primary_font-regular-italic: (
+    font-family: $primary_font,
+    font-weight: 400,
+    font-style: italic
+);
+
+$primary_font-bold: (
+    font-family: $primary_font,
+    font-weight: 700,
+    font-style: normal
+);
+
+$primary_font-bold-italic: (
+    font-family: $primary_font,
+    font-weight: 700,
+    font-style: italic
+);
+
+$primary_font-Black: (
+    font-family: $primary_font,
+    font-weight: 900,
+    font-style: italic
+);
+
+$primary_font-Black-italic: (
+    font-family: $primary_font,
+    font-weight: 900,
+    font-style: normal
+);
+
+// END: Primary Font ==============
+// ====================================
+
+// START: Secondary Font ==============
+// ====================================
+$secondary_font-thin: (
+    font-family: $secondary_font,
+    font-weight: 100,
+    font-style: normal
+);
+$secondary_font-light: (
+    font-family: $secondary_font,
+    font-weight: 300,
+    font-style: normal
+);
+$secondary_font-regular: (
+    font-family: $secondary_font,
+    font-weight: 400,
+    font-style: normal
+);
+$secondary_font-medium: (
+    font-family: $secondary_font,
+    font-weight: 500,
+    font-style: normal
+);
+$secondary_font-semi-bold: (
+    font-family: $secondary_font,
+    font-weight: 600,
+    font-style: normal
+);
+$secondary_font-bold: (
+    font-family: $secondary_font,
+    font-weight: 700,
+    font-style: normal
+);
+$secondary_font-extra-bold: (
+    font-family: $secondary_font,
+    font-weight: 800,
+    font-style: normal
+);
+// END: Secondary Font ==============
+// ====================================
+
+
+
+// Text Colors
+$text-color: (
+    "text-custom": #214099,
+);
+
+// Background Colors
+$bg-colors: (
+    "bg-primary": #ddd78d,
+);
+
+// Border Colors
+// $border-colors: (
+//     "border-blue": $primary,
+// );
+
+
+
+@mixin print-styles($map) {
+    @each $property, $value in $map {
+        #{$property}: $value;
+    }
+}

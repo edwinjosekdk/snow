@@ -1,0 +1,175 @@
+
+
+@import "./scss/mixins/variables";
+@import "./scss/abstracts/_btn.scss";
+@import "./scss/mixins/common_fun";
+@import "./scss/abstracts/header";
+@import "./scss/abstracts/footer";
+@import "./scss/abstracts/breadcrumb";
+@import "./scss/abstracts/tab";
+
+
+
+
+
+.banner-wrap {
+    max-height: 1080px;
+    min-height: 768px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../img/natural-cosmetics-home-salon-spa-treatments-facial-mask-home.png") no-repeat right top;
+    background-size: cover;
+    background-position: center;
+
+    &__center {
+        max-width: 903px;
+        margin: 0 auto;
+        @include media-max-lg {
+            max-width: 458px;
+        }
+        
+        &--bottom {
+            padding-top: 14rem;
+        }
+    }
+    &__title-blk {
+        max-width: 903px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        .link {
+            margin-top: 40px;
+        }
+        
+    }
+    .title-blk {
+        &__title {
+            @include print-styles($primary_font-bold);
+            font-size: 72px;
+            color: #FFFFFF;
+            text-align: center;
+            @include media-max-xl {
+                font-size: 50px;
+            }
+            @include media-max-lg {
+                font-size: 37px;
+            }
+            @include media-max-md {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+.services-wrap-holder {
+    .read-more-txt {
+        background-color: transparent;
+        padding: 0;
+        color: #333;
+        border: 0;
+    }
+    .gallery-sec {
+        .title--sec-title {
+            padding-bottom: 25px;
+        }
+        .sec-title-desc {
+            @include print-styles($secondary_font-thin);
+            font-size: 22px;
+            color:  #a2abb0;
+            text-align: center;
+            padding-bottom: 55px;
+            @include media-max-lg {
+                font-size: 25px;
+            }
+            @include media-max-md {
+                font-size: 16px;
+            }
+        }
+        .tab-content {
+            @include media-max-lg {
+                padding-top: 30px;
+            }
+        }
+    }
+    .gallery-item-blk {
+        padding: 20px;
+        .item-data {
+            padding-top: 32px;
+            @include media-max-lg {
+                padding-top: 15px;
+            }
+            &__title {
+                @include print-styles($secondary_font-regular);
+                font-size: 24px;
+                color: #000;
+                @include media-max-lg {
+                    font-size: 18px;
+                }
+            }
+            &__time {
+                @include print-styles($secondary_font-medium);
+                font-size: 20px;
+                @include media-max-lg {
+                    font-size: 13px;
+                }
+            }
+            &__dtaile {
+                padding-top: 24px !important;
+                font-size: 15px;
+                @include media-max-lg {
+                    padding-top: 10px !important;
+                }
+            }
+        }
+    }
+    .gallery-sec {
+        .gallery-item-blk {
+            figure {
+                // margin: 0 auto;
+                img {
+                    @include media-min-lg {
+                        max-height: 344px;
+                        height: 100%;
+                    }   
+                }
+            }
+        }
+    }
+}
+
+
+
+.bottom-pagination {
+    .appoinment-link {
+        @include media-max-lg {
+            min-width: unset;
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+    .pagination-blk {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        @include media-max-md {
+            justify-content: center;
+        }
+        .pagination-count {
+            padding: 11px 26px;
+            border: 1px solid map-get($bg-colors, bg-primary);
+            color: #a2abb0;
+            @include media-max-sm {
+                padding: 11px 15px;
+            }
+            &.active {
+                background-color: map-get($bg-colors, bg-primary);
+                color: #fff;
+                border-color: map-get($bg-colors, bg-primary);
+            }
+        }
+    }
+}
