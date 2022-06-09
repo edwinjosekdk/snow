@@ -1,10 +1,10 @@
 @import url("https://use.typekit.net/wiu0hze.css");
 .btn {
   border-radius: 1.5px;
-  padding: 11px 25px;
+  padding: 11px 25px 5px;
   min-width: 256px;
   display: inline-block;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
   line-height: 27px;

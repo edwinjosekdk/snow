@@ -1,10 +1,10 @@
 @import url("https://use.typekit.net/wiu0hze.css");
 .btn {
   border-radius: 1.5px;
-  padding: 11px 25px;
+  padding: 11px 25px 5px;
   min-width: 256px;
   display: inline-block;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
   line-height: 27px;
@@ -583,6 +583,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 0;
   font-size: 72px;
 }
 
@@ -606,5 +607,11 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .appointment-wrap .appointment-link-blk {
   padding-top: 48px;
+}
+
+@media (max-width: 1200px) {
+  .footer-wrap {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=offers.css.map */

@@ -6,10 +6,10 @@
 
 .btn {
     border-radius: 1.5px;
-    padding: 11px 25px;
+    padding: 11px 25px 5px;
     min-width: 256px;
     display: inline-block;
-    @include print-styles($secondary_font-bold);
+    @include print-styles($primary_font-bold);
     line-height: 27px;
     font-size: 20px;
     min-height: 51px;
