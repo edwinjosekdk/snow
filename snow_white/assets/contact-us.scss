@@ -1,0 +1,184 @@
+
+
+@import "./scss/mixins/variables";
+@import "./scss/abstracts/_btn.scss";
+@import "./scss/mixins/common_fun";
+@import "./scss/abstracts/header";
+@import "./scss/abstracts/footer";
+@import "./scss/abstracts/breadcrumb";
+@import "./scss/abstracts/tab";
+@import "./scss/abstracts/form_model";
+
+
+
+
+.banner-wrap {
+    max-height: 1080px;
+    min-height: 768px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../img/young-woman-with-clay-mask-her-face.png") no-repeat right top;
+    background-size: cover;
+    background-position: center;
+
+    &.flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(768px - -105px);
+        @include media-max-xl {
+            min-height: calc(500px - -83px);
+        }
+        @include media-max-md {
+            min-height: calc(300px - -90px);
+        }
+        @include media-max-sm {
+            min-height: calc(300px - -90px);
+        }
+        .banner-wrap__center--bottom {
+            padding-top: 35px;
+        }
+    }
+    &__center {
+        max-width: 903px;
+        margin: 0 auto;
+        @include media-max-lg {
+            max-width: 458px;
+        }
+        
+        &--bottom {
+            padding-top: 14rem;
+        }
+    }
+    &__title-blk {
+        max-width: 903px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        .link {
+            margin-top: 40px;
+        }
+        
+    }
+    .title-blk {
+        &__title {
+            @include print-styles($primary_font-bold);
+            font-size: 72px;
+            color: #FFFFFF;
+            text-align: center;
+            @include media-max-xl {
+                font-size: 50px;
+            }
+            @include media-max-lg {
+                font-size: 37px;
+            }
+            @include media-max-md {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.contact-wrap {
+    padding: 121px 0 0px;
+    @include media-max-lg {
+        padding-top: 0px;
+    }
+    .title-blk {
+        .title {
+            @include print-styles($primary_font-bold);
+            font-size: 40px;
+            color: #052F2B;
+            margin-bottom: 0;
+            @include media-max-md {
+                font-size: 20px;
+            }
+        }
+    }
+    .contact-box {
+        padding-top: 66px;
+        @include media-max-lg {
+            padding-top: 30px;
+        }
+    }
+    .contact-blk--top-space {
+        padding-top: 41px;
+        @include media-max-lg {
+            padding-top: 20px;
+        }
+    }
+    .contack-blk {
+        figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 40px;
+            display: block;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #DDD78D;
+            margin-bottom: 0px;
+            .icon {
+                width: 28px;
+                height: 28px;
+                display: inline-block;
+                @include print-styles($secondary_font-regular);
+                font-size: 18px;
+            }
+        }
+        .text-desc {
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+    }
+    .form-model-ctrl {
+        min-width: unset;
+        @include media-min-xl {
+            margin-top: -31%;
+            position: relative;
+            background: #fff;
+        }
+        .ctrl-box {
+            @include media-min-xl {
+                padding: 60px;
+            }
+            @include media-max-xl {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        .ctrl-body-blk {
+            padding-bottom: 40px;
+            input {
+                max-width: 100%;
+            }
+        }
+        .seperate-blk {
+            @include media-max-xl {
+                padding-top: 15px;
+            }
+        }
+    }
+    .location-blk {
+        max-height: 450px;
+        padding-top: 136px;
+        @include media-max-lg {
+            padding-top: 50px;
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+
+.footer-wrap {
+    margin-top: 0px;
+}
