@@ -7,7 +7,6 @@
   font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
   font-size: 20px;
   min-height: 51px;
 }
@@ -181,7 +180,7 @@ header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link.active {
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
   line-height: 44px;
@@ -194,7 +193,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 

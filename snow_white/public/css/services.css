@@ -7,7 +7,6 @@
   font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
   font-size: 20px;
   min-height: 51px;
 }
@@ -181,7 +180,7 @@ header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link.active {
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
   line-height: 44px;
@@ -194,7 +193,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -556,6 +555,12 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   align-items: flex-end;
 }
 
+.gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (max-width: 767px) {
   .gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data {
     font-size: 14px;
@@ -724,7 +729,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   color: #052F2B;
   border: 0;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -734,7 +739,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .services-wrap-holder .gallery-sec .sec-title-desc {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 22px;
   color: #a2abb0;
@@ -806,7 +811,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .services-wrap-holder .gallery-item-blk .item-data__dtaile {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   padding-top: 24px !important;
   font-size: 20px;
@@ -865,7 +870,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
   cursor: pointer;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 

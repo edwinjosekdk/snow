@@ -99,7 +99,7 @@ header {
                 }
             }
             .header-nav-call {
-                @include print-styles($secondary_font-thin);   
+                @include print-styles($secondary_font-regular);   
                 font-size: 20px;
                 line-height: 44px;
                 background: #052F2B;
@@ -108,7 +108,7 @@ header {
                 color: #fff;
                 span {
                     font-size: 20px;
-                    @include print-styles($secondary_font-thin);
+                    @include print-styles($secondary_font-regular);
                 }
                 @include media-max-md {
                     width: 100%;

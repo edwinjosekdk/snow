@@ -192,7 +192,7 @@
                 margin: 0;
                 font-size: 21px;
                 line-height: 36px;
-                @include print-styles($secondary_font-thin);
+                @include print-styles($secondary_font-regular);
                 @include media-max-xl {
                     font-size: 16px;
                     padding-top: 0px;
@@ -238,7 +238,7 @@
                     color: #052F2B;
                     line-height: 36px;
                     font-size: 18px;
-                    @include print-styles($secondary_font-thin);
+                    @include print-styles($secondary_font-regular);
                     @include media-max-xl {
                         line-height: 24px;
                         font-size: 11px;
@@ -304,6 +304,7 @@
         .desc_txt {
             color: #DDD78D;
             margin: 0;
+            @include print-styles($secondary_font-regular);
             &:nth-child(even) {
                 padding: 24px 0px 0px;
             }
@@ -360,37 +361,145 @@
             padding: 30px 0 0;
         }
     }
+    .bg-full-view, 
+    .card-blk {
+        &__footer {
+            display: flex;
+            .btn {
+                min-height: unset;
+            }
+        }
+    }
+    .bg-full-view {
+        min-height: 572px;
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        padding: 12px;
+        overflow-y: hidden;
+        &:hover {
+            &:after {
+                background-size: 100% 100%;
+            }
+            &:before {
+                transform: translate(-50%, 0%);
+                background-image: linear-gradient(to top, #052F2B, transparent);
+            }
+            .card-blk__body {
+                color: #fff;
+                &__desc {
+                    color: #fff;
+                }
+            }
+            .card-blk__footer {
+                .btn {
+                    color: #fff;
+                    border-color: #fff;
+                }
+            }
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            transition: all 0.3s ease-in-out;
+            // background-image: attr(data-bgimg);
+            // background: url(attr(data-bgimg)) no-repeat right top;
+            background: url("../img/young-woman-getting-new-hairstyle-professional-hair-styling-saloon-hairdresser-is-massaging-her-head.png") no-repeat right top;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: 100% 56%;
+            z-index: -1;
+        }
+        .card-blk__footer {
+            margin-top: unset;
+            position: relative;
+            z-index: 2;
+        }
+        .card-blk__body {
+            position: relative;
+            z-index: 2;
+        }
+        &:before {
+            content: '';
+            z-index: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            padding: 32px 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
     .card-blk {
         height: 100%;
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
-        // &--top {
-        //     // background-image: linear-gradient(to bottom right, red, yellow);
-        //     position: relative;
-        //     &:before {
-        //         content: '';
-        //         position: absolute;
-        //         top: 0;
-        //         bottom: 0;
-        //         left: 0;
-        //         right: 0;
-        //         background-color: rgba(255, 0, 0, 0.2);
-        //     }
-        //     .card-blk {
-        //         &__body {
-        //             padding: 0 25px 40px;
-        //             margin-top: -283px;
-        //         }
-        //         &__footer {
-        //             padding: 0 25px 40px;
-        //         }
-        //     }
-        // }
+        padding: 12px;
+        transition: all 0.3s ease-in-out;
+        overflow-y: hidden;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            &:after {
+                transform: translate(-50%, 0%);
+                background-image: linear-gradient(to top, #052F2B, transparent);
+            }
+            .card-blk {
+                &__head {
+                    img {
+                        z-index: -1;
+                        position: relative;
+                    }
+                }
+                &__footer {
+                    .btn  {
+                        border-color: #fff;
+                        color: #fff;
+                    }
+                }
+            }
+            .card-blk__body__title,
+            .card-blk__body__desc  {
+                color: #fff;
+            }
+        }
+        &:after {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            padding: 32px 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
         &__head {
+            transition: all 0.3s ease-in-out;
             figure {
                 // max-height: 339px;
                 img {
+                    transition: all 0.3s ease-in-out;
                     width: 100%;
                     object-fit: cover;
                     max-height: 339px;
@@ -399,6 +508,7 @@
         }
         &__body {
             padding-top: 40px;
+            transition: all 0.3s ease-in-out;
             @include media-max-lg {
                 padding-top: 20px;
             }
@@ -407,13 +517,14 @@
                 margin: 0;
                 font-size: 28px;
                 line-height: 36px;
+                text-align: left;
                 @include media-max-lg {
                     font-size: 20px;
                 }
             }
             &__desc {
                 padding: 15px 0;
-                @include print-styles($secondary_font-thin);
+                @include print-styles($secondary_font-light);
                 font-size: 20px;
                 line-height: 32px;
                 @include  textCountLineEllipse(3);
@@ -424,6 +535,7 @@
             }
         }
         &__footer {
+            transition: all 0.3s ease-in-out;
             margin-top: auto;
             .link {
                 padding: 6px 14px;
@@ -478,7 +590,7 @@
             }
         }
         .desc {
-            @include print-styles($secondary_font-thin);
+            @include print-styles($secondary_font-regular);
             text-align: center;
             color: #DDD78D;
             font-size: 28px;
@@ -573,7 +685,7 @@
                             }
                         }
                         .details {
-                            @include print-styles($secondary_font-thin);
+                            @include print-styles($secondary_font-regular);
                             font-size: 16px;
                             margin: 0;
                             @include media-max-xl {
@@ -582,7 +694,7 @@
                         }
                     }
                     .testimonial-disc {
-                        @include print-styles($secondary_font-thin);
+                        @include print-styles($secondary_font-regular);
                         font-size: 22px;
                         line-height: 32px;
                         padding-top: 40px;

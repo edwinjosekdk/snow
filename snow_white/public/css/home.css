@@ -7,7 +7,6 @@
   font-family: playfair-display, serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
   font-size: 20px;
   min-height: 51px;
 }
@@ -168,6 +167,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (max-width: 767px) {
@@ -351,7 +356,7 @@ header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link.active {
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
   line-height: 44px;
@@ -364,7 +369,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -869,7 +874,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 21px;
   line-height: 36px;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -940,7 +945,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   line-height: 36px;
   font-size: 18px;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -1019,6 +1024,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .choose-us-wrap .des_blk .desc_txt {
   color: #DDD78D;
   margin: 0;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .choose-us-wrap .des_blk .desc_txt:nth-child(even) {
@@ -1095,13 +1103,148 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   }
 }
 
+.service-wrap .bg-full-view__footer,
+.service-wrap .card-blk__footer {
+  display: flex;
+}
+
+.service-wrap .bg-full-view__footer .btn,
+.service-wrap .card-blk__footer .btn {
+  min-height: unset;
+}
+
+.service-wrap .bg-full-view {
+  min-height: 572px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  overflow-y: hidden;
+}
+
+.service-wrap .bg-full-view:hover:after {
+  background-size: 100% 100%;
+}
+
+.service-wrap .bg-full-view:hover:before {
+  transform: translate(-50%, 0%);
+  background-image: linear-gradient(to top, #052F2B, transparent);
+}
+
+.service-wrap .bg-full-view:hover .card-blk__body {
+  color: #fff;
+}
+
+.service-wrap .bg-full-view:hover .card-blk__body__desc {
+  color: #fff;
+}
+
+.service-wrap .bg-full-view:hover .card-blk__footer .btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.service-wrap .bg-full-view:after {
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  background: url("../img/young-woman-getting-new-hairstyle-professional-hair-styling-saloon-hairdresser-is-massaging-her-head.png") no-repeat right top;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 56%;
+  z-index: -1;
+}
+
+.service-wrap .bg-full-view .card-blk__footer {
+  margin-top: unset;
+  position: relative;
+  z-index: 2;
+}
+
+.service-wrap .bg-full-view .card-blk__body {
+  position: relative;
+  z-index: 2;
+}
+
+.service-wrap .bg-full-view:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 32px 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .service-wrap .card-blk {
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+  overflow-y: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-wrap .card-blk:hover:after {
+  transform: translate(-50%, 0%);
+  background-image: linear-gradient(to top, #052F2B, transparent);
+}
+
+.service-wrap .card-blk:hover .card-blk__head img {
+  z-index: -1;
+  position: relative;
+}
+
+.service-wrap .card-blk:hover .card-blk__footer .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.service-wrap .card-blk:hover .card-blk__body__title,
+.service-wrap .card-blk:hover .card-blk__body__desc {
+  color: #fff;
+}
+
+.service-wrap .card-blk:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 32px 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.service-wrap .card-blk__head {
+  transition: all 0.3s ease-in-out;
 }
 
 .service-wrap .card-blk__head figure img {
+  transition: all 0.3s ease-in-out;
   width: 100%;
   object-fit: cover;
   max-height: 339px;
@@ -1109,6 +1252,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .service-wrap .card-blk__body {
   padding-top: 40px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 992px) {
@@ -1124,6 +1268,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   margin: 0;
   font-size: 28px;
   line-height: 36px;
+  text-align: left;
 }
 
 @media (max-width: 992px) {
@@ -1135,7 +1280,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .service-wrap .card-blk__body__desc {
   padding: 15px 0;
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   font-size: 20px;
   line-height: 32px;
@@ -1154,6 +1299,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .service-wrap .card-blk__footer {
+  transition: all 0.3s ease-in-out;
   margin-top: auto;
 }
 
@@ -1233,7 +1379,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .work-us-wrap .work-us-blk .desc {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   text-align: center;
   color: #DDD78D;
@@ -1379,7 +1525,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .testimonial-wrap .testimonial-sec #testimonial-carousel-controls .item-inner__txt-blk .testimonial-detailer .details {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   margin: 0;
@@ -1393,7 +1539,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .testimonial-wrap .testimonial-sec #testimonial-carousel-controls .item-inner__txt-blk .testimonial-disc {
   font-family: "Noto Sans Display", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   font-size: 22px;
   line-height: 32px;

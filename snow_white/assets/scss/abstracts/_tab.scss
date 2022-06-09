@@ -70,6 +70,9 @@
                     display: flex;
                     justify-content: center;
                     align-items: flex-end;
+                    span {
+                        @include print-styles($secondary_font-regular);
+                    }
                     @include media-max-md {
                         font-size: 14px;
                     }

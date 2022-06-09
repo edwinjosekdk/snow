@@ -10,7 +10,7 @@
     min-width: 256px;
     display: inline-block;
     @include print-styles($primary_font-bold);
-    line-height: 27px;
+    // line-height: 27px;
     font-size: 20px;
     min-height: 51px;
     // white-space: pre;
