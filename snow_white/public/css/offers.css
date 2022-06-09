@@ -142,8 +142,9 @@ header .nav-bar-mob-view.open-nav {
 header .nav-bar-mob-view .nav-bar-blk {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 0 0 auto;
   align-items: center;
+  max-width: 516px;
 }
 
 @media (max-width: 767px) {
@@ -161,6 +162,9 @@ header .nav-bar-mob-view .nav-bar-blk {
 header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link {
   color: #fff;
   text-decoration: none;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link.active {
@@ -189,6 +193,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 @media (max-width: 767px) {
@@ -230,7 +237,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   overflow-x: hidden;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .footer-wrap {
     padding: 75px 0;
   }
@@ -273,6 +280,12 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   margin: 24px 0px;
 }
 
+@media (max-width: 1200px) {
+  .footer-wrap .footer-box .footer-link-blk .list-link:nth-child(even) {
+    margin: 12px 0px;
+  }
+}
+
 .footer-wrap .footer-box .footer-link-blk .list-link:last-child {
   margin-bottom: 0px;
 }
@@ -285,6 +298,18 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box {
   padding-left: 45px;
   position: relative;
+}
+
+.footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box div {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (max-width: 1200px) {
@@ -320,19 +345,25 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .footer-wrap .footer-box .footer-link-blk .list-link .office-time {
   color: #fff;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link .contact-blk {
   position: relative;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link .contact-blk span {
   position: absolute;
-  right: 0;
+  right: 12px;
   top: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .footer-wrap .footer-social-box {
     flex-direction: column;
     position: absolute;
@@ -344,25 +375,31 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .footer-wrap .footer-social-box {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
   .footer-wrap .footer-social-box {
     justify-content: space-between !important;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .footer-wrap .footer-social-box .icon-blk__list {
     min-width: 35px;
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .footer-wrap .footer-social-box .icon-blk__list:nth-child(even) {
     padding: 13px 0;
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .footer-wrap .footer-social-box .icon-blk__list:last-child {
     padding-bottom: 0px;
   }
@@ -371,6 +408,11 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .footer-wrap .footer-social-box .icon-blk__list a {
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
 }
 
 .breadcrumb-blk ul {
@@ -387,6 +429,12 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   color: #fff;
   padding: 0 15px;
   position: relative;
+}
+
+@media (max-width: 992px) {
+  .breadcrumb-blk__path {
+    font-size: 13px;
+  }
 }
 
 .breadcrumb-blk__path:after {
@@ -414,6 +462,35 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   background: url("../img/close-up-beautiful-young-girl-with-perfect-clean-skin-alstroemeria-petals-looking-camera-white-background-facial-treatment-beauty-spa.png") no-repeat right top;
   background-size: cover;
   background-position: center;
+}
+
+.banner-wrap.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(768px - -105px);
+}
+
+@media (max-width: 1200px) {
+  .banner-wrap.flex-center {
+    min-height: calc(500px - -83px);
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-wrap.flex-center {
+    min-height: calc(300px - -90px);
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-wrap.flex-center {
+    min-height: calc(300px - -90px);
+  }
+}
+
+.banner-wrap.flex-center .banner-wrap__center--bottom {
+  padding-top: 35px;
 }
 
 .banner-wrap__center {

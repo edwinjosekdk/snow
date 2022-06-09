@@ -74,8 +74,9 @@ header {
         .nav-bar-blk {
             display: flex;
             justify-content: space-between;
-            margin: 0;
+            margin: 0 0 0 auto;
             align-items: center;
+            max-width: 516px;
             @include media-max-md {
                 flex-direction: column;
             }
@@ -86,6 +87,7 @@ header {
                 .nav-bar-link {
                     color: #fff;
                     text-decoration: none;
+                    @include print-styles($secondary_font-medium);
                     &.active {
                         color: #052F2B;
                     }
@@ -106,6 +108,7 @@ header {
                 color: #fff;
                 span {
                     font-size: 20px;
+                    @include print-styles($secondary_font-thin);
                 }
                 @include media-max-md {
                     width: 100%;

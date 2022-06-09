@@ -22,6 +22,24 @@
     background-size: cover;
     background-position: center;
 
+    &.flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(768px - -105px);
+        @include media-max-xl {
+            min-height: calc(500px - -83px);
+        }
+        @include media-max-md {
+            min-height: calc(300px - -90px);
+        }
+        @include media-max-sm {
+            min-height: calc(300px - -90px);
+        }
+        .banner-wrap__center--bottom {
+            padding-top: 35px;
+        }
+    }
     &__center {
         max-width: 903px;
         margin: 0 auto;
@@ -69,8 +87,9 @@
     .read-more-txt {
         background-color: transparent;
         padding: 0;
-        color: #333;
+        color: #052F2B;
         border: 0;
+        @include print-styles($secondary_font-thin);
     }
     .gallery-sec {
         .title--sec-title {
@@ -87,6 +106,7 @@
             }
             @include media-max-md {
                 font-size: 16px;
+                padding-bottom: 0;
             }
         }
         .tab-content {
@@ -96,7 +116,9 @@
         }
     }
     .gallery-item-blk {
-        padding: 20px;
+        @include media-min-sm {
+            padding: 20px;
+        }
         .item-data {
             padding-top: 32px;
             @include media-max-lg {
@@ -118,10 +140,14 @@
                 }
             }
             &__dtaile {
+                @include print-styles($secondary_font-thin);
                 padding-top: 24px !important;
-                font-size: 15px;
+                font-size: 20px;
                 @include media-max-lg {
                     padding-top: 10px !important;
+                }
+                @include media-max-md {
+                    font-size: 15px;
                 }
             }
         }
@@ -145,6 +171,8 @@
 
 .bottom-pagination {
     .appoinment-link {
+        @include print-styles($primary_font-bold);
+        font-size: 20px;
         @include media-max-lg {
             min-width: unset;
             width: 100%;
@@ -162,8 +190,22 @@
             padding: 11px 26px;
             border: 1px solid map-get($bg-colors, bg-primary);
             color: #a2abb0;
+            font-size: 20px;
+            cursor: pointer;
+            @include print-styles($secondary_font-thin);
+            @include media-max-lg {
+                font-size: 13px;
+            }
             @include media-max-sm {
                 padding: 11px 15px;
+            }
+            &.disabled {
+                cursor: unset;
+                border-color: rgba(221, 215, 141,0.3);
+            }
+            &.next-btn,
+            &.prev-btn {
+                color: #052F2B;
             }
             &.active {
                 background-color: map-get($bg-colors, bg-primary);

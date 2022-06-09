@@ -8,7 +8,7 @@
     background-size: cover;
     padding: 120px 0px;
     overflow-x: hidden;
-    @include media-max-lg {
+    @include media-max-xl {
         padding: 75px 0;
     }
     @include media-max-md {
@@ -34,9 +34,14 @@
                 color: #fff;
                 &:nth-child(even) {
                     margin: 24px 0px;
+                    @include media-max-xl {
+                        margin: 12px 0px;
+                    }
                 }
                 &:last-child {
-                    margin-bottom: 0px;
+                    // @include media-min-xl {
+                        margin-bottom: 0px;
+                    // }
                 }
                 &--insdicator {
                     a {
@@ -56,7 +61,11 @@
                     // @include media-max-xl {
                     //     display: flex;
                     // }
+                    div {
+                        @include print-styles($secondary_font-regular);
+                    }
                     span {
+                        @include print-styles($secondary_font-regular);  
                         @include media-max-xl {
                             display: block;
                             text-align: start;
@@ -89,13 +98,15 @@
                 }
                 .office-time {
                     color: #fff;
+                    @include print-styles($secondary_font-regular);
                 }
                 .contact-blk {
                     position: relative;
                     // padding-right: 30px;
+                    @include print-styles($secondary_font-regular);
                     span {
                         position: absolute;
-                        right: 0;
+                        right: 12px;
                         top: 0;
                     }
                 }
@@ -103,7 +114,7 @@
         }
     }
     .footer-social-box {
-        @include media-min-sm {
+        @include media-min-xl {
             flex-direction: column;
             position: absolute;
             max-width: 30px;
@@ -112,27 +123,35 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        @include media-max-sm {
+        @include media-max-xl {
+            max-width: 250px;
+        }
+        @include media-max-xl {
             justify-content: space-between !important;
         }
         .icon-blk {
             &__list {
-                @include media-max-sm {
+                @include media-max-xl {
                     min-width: 35px;
                 }
                 &:nth-child(even) {
-                    @include media-min-sm {
+                    @include media-min-xl {
                         padding: 13px 0;
                     }
                 }
                 &:last-child {
-                    @include media-min-sm {
+                    @include media-min-xl {
                         padding-bottom: 0px;
                     }
                 }
                 a {
                     width: 30px;
                     height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
                 }
             }
         }

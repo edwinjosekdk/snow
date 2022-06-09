@@ -15,6 +15,9 @@
         color: #fff;
         padding: 0 15px;
         position: relative;
+        @include media-max-lg {
+            font-size: 13px;
+        }
         &:after {
             content: '/';
             position: absolute;
