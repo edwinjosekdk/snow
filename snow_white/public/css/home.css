@@ -28,8 +28,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-.btn.sw_bg-primary:hover {
+.btn.sw_bg-primary:hover, .btn.sw_bg-primary:active, .btn.sw_bg-primary:focus-visible {
   color: #ddd78d;
+}
+
+.btn.sw_bg-primary:focus-visible {
+  background-color: transparent;
+  outline: unset;
+  border: 1px solid #ddd78d;
 }
 
 .sw_bg-primary {
@@ -620,6 +626,328 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   transform: translate(-50%, -50%);
 }
 
+@media (min-width: 992px) {
+  .form-model-ctrl {
+    min-width: 866px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form-model-ctrl {
+    min-width: 75%;
+  }
+}
+
+.form-model-ctrl .ctrl-box {
+  padding: 40px;
+  border-radius: 0px;
+}
+
+.form-model-ctrl .ctrl-box .title-blk {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+  align-items: flex-start;
+  max-width: 582px;
+}
+
+.form-model-ctrl .ctrl-box .title-blk .title {
+  font-family: playfair-display, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-box .title-blk .title {
+    font-size: 25px;
+  }
+}
+
+.form-model-ctrl .ctrl-box .title-blk__desc {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-box .title-blk__desc {
+    font-size: 15px;
+  }
+}
+
+.form-model-ctrl .ctrl-body-blk {
+  padding: 20px 0px 0px;
+}
+
+.form-model-ctrl .ctrl-body-blk .form-group label,
+.form-model-ctrl .ctrl-body-blk .input-group label,
+.form-model-ctrl .ctrl-body-blk .form-label label {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.form-model-ctrl .ctrl-body-blk .form-group input,
+.form-model-ctrl .ctrl-body-blk .form-group select,
+.form-model-ctrl .ctrl-body-blk .input-group input,
+.form-model-ctrl .ctrl-body-blk .input-group select,
+.form-model-ctrl .ctrl-body-blk .form-label input,
+.form-model-ctrl .ctrl-body-blk .form-label select {
+  max-width: 378px;
+  font-size: 16px;
+  height: 48px;
+  margin-right: 0px;
+}
+
+.form-model-ctrl .ctrl-body-blk .form-group input:focus,
+.form-model-ctrl .ctrl-body-blk .form-group select:focus,
+.form-model-ctrl .ctrl-body-blk .input-group input:focus,
+.form-model-ctrl .ctrl-body-blk .input-group select:focus,
+.form-model-ctrl .ctrl-body-blk .form-label input:focus,
+.form-model-ctrl .ctrl-body-blk .form-label select:focus {
+  box-shadow: unset;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-body-blk .form-group input,
+  .form-model-ctrl .ctrl-body-blk .form-group select,
+  .form-model-ctrl .ctrl-body-blk .input-group input,
+  .form-model-ctrl .ctrl-body-blk .input-group select,
+  .form-model-ctrl .ctrl-body-blk .form-label input,
+  .form-model-ctrl .ctrl-body-blk .form-label select {
+    max-width: 100%;
+  }
+}
+
+.form-model-ctrl .ctrl-body-blk .input-group .btn-label,
+.form-model-ctrl .ctrl-body-blk .input-group .dropdown-toggle {
+  border: 1px solid #ced4da;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no {
+  position: relative;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no input {
+  padding-left: 65px;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown {
+  max-width: unset;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown .dropdown-menu {
+  max-width: 60px;
+  min-width: unset;
+  text-align: center;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown .dropdown-menu .dropdown-item {
+  font-size: 13px;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-toggle {
+  max-width: 50px;
+  border: 1px solid #ced4da;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder .dropdown-toggle {
+  max-width: 50px;
+  height: 48px;
+  font-size: 16px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ddd78d;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder {
+  position: relative;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder input {
+  border-color: transparent;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder:after {
+  content: 'Browse';
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  padding: 9px 23px 10px;
+  transform: translate(4px, -50%);
+  background: #DDD78D;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.form-model-ctrl .seperate-blk {
+  padding-top: 27px;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .seperate-blk {
+    padding-top: 1rem;
+  }
+}
+
+.modal-dialog {
+  position: relative;
+}
+
+.modal-dialog .btn-close {
+  position: absolute;
+  background: unset;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  opacity: 1;
+  right: 0;
+  top: 0;
+  transform: translate(-30px, 30px);
+}
+
+.modal-dialog .btn-close img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-dialog .modal-footer {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-footer {
+    padding-top: 20px;
+  }
+}
+
+.thakyou-data {
+  min-height: 459px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .thakyou-data {
+    min-height: 359px;
+  }
+}
+
+.thakyou-data .thankyou-inner-data {
+  max-width: 554px;
+}
+
+.thakyou-data .tick-icon {
+  width: 86px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #062f2b;
+  border-radius: 0.25px;
+}
+
+.thakyou-data .txt-blk {
+  padding-top: 32px;
+}
+
+.thakyou-data .txt-blk .title {
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .thakyou-data .txt-blk .title {
+    font-size: 20px;
+  }
+}
+
+.thakyou-data .txt-blk .desc {
+  padding: 10px 0 20px;
+  margin: 0;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .thakyou-data .txt-blk .desc {
+    font-size: 16px;
+  }
+}
+
+.date-picker-select-blk {
+  position: relative;
+}
+
+.date-picker-select-blk input {
+  padding-right: 60px;
+}
+
+.date-picker-select-blk .calendar-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-31px, 30%);
+  cursor: pointer;
+}
+
+.daterangepicker.show-calendar {
+  max-width: 376px !important;
+}
+
+.daterangepicker .drp-buttons {
+  display: flex;
+}
+
+.daterangepicker .drp-buttons .btn {
+  min-width: unset;
+  min-height: unset;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.daterangepicker .drp-buttons .btn.cancelBtn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.daterangepicker .drp-buttons .btn.applyBtn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
 .banner-wrap {
   max-height: 1080px;
   height: 100%;
@@ -929,7 +1257,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   display: block;
   font-family: playfair-display, serif;
   font-weight: 900;
-  font-style: italic;
+  font-style: normal;
 }
 
 @media (max-width: 1200px) {

@@ -28,8 +28,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-.btn.sw_bg-primary:hover {
+.btn.sw_bg-primary:hover, .btn.sw_bg-primary:active, .btn.sw_bg-primary:focus-visible {
   color: #ddd78d;
+}
+
+.btn.sw_bg-primary:focus-visible {
+  background-color: transparent;
+  outline: unset;
+  border: 1px solid #ddd78d;
 }
 
 .sw_bg-primary {

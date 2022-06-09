@@ -18,6 +18,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- END: Bootstrap5 css
     ====================== -->
+    <!-- START: Date range picker css
+    ====================== -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- END: Date range picker css
+    ====================== -->
     <link rel="stylesheet" href="./public/css/home.css" />
 </head>
 <body class="position-relative">
@@ -262,7 +267,10 @@
                 <h3 class="title">Work With Us</h3>
                 <p class="desc">Become a part of our family to inspire and get inspired by professional experts.</p>
                 <div class="text-center">
-                    <button class="link btn sw_bg-primary" type="button" data-toggle="modal" data-target="#workWithUsModal" href="#">Submit Your Resume</button>
+                    <!-- <button class="link btn sw_bg-primary" type="button" data-bs-toggle="modal" data-bs-target="#workWithUsModal">Submit Your Resume</button> -->
+                    <button type="button" class="link btn sw_bg-primary" data-bs-toggle="modal" data-bs-target="#workWithUsModal">
+                        Launch demo modal
+                      </button>
                 </div>
             </div>
         </div>
@@ -989,27 +997,212 @@
 
     <!-- START: Work with Us model box
     =================================== -->
-    <div class="modal fade" id="workWithUsModal" tabindex="-1" role="dialog" aria-labelledby="workWithUsModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="workWithUsModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+      <div class="modal fade" id="workWithUsModal--bck" tabindex="-1" aria-labelledby="workWithUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog form-model-ctrl">
+          <div class="modal-content ctrl-box">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="./public/img/icon/close.png" /></button>
+            <div class="modal-header title-blk">
+              <h5 class="modal-title title" id="workWithUsModalLabel">Work With Us</h5>
+              <p class="m-0 title-blk__desc sw_txt-custom pt-0">Become a part of our family to inspire and get inspired by professional experts.</p>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body ctrl-body-blk">
+                <form action="#" method="post">
+                    <div class="row w-100 mx-auto">
+                        <div class="col-md-6 ps-0 pe-0 pe-md-3">
+                            <div> 
+                                <div class="form-group">
+                                    <label for="full-name">Full Name</label>
+                                    <input type="text" class="form-control" id="full-name" placeholder="Full name" name="full-name">
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pe-0 ps-0 ps-md-3 pt-3 pt-md-0">
+                            <div> 
+                                <div class="form-group">
+                                    <label for="email-address">Email Address</label>
+                                    <input type="text" class="form-control" id="email-address" placeholder="Email address" name="email-address">
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-0 seperate-blk pe-0 pe-md-3">
+                            <div class="ph-no"> 
+                                <div class="form-group">
+                                    <label for="phone-nuumber">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone-nuumber" placeholder="Phone Number" name="phone-nuumber">
+                                </div>
+                                <div class="dropdown-holder">
+                                    <div class="dropdown">
+                                        <button class="btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">+91</button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">+45</a></li>
+                                            <li><a class="dropdown-item" href="#">+67</a></li>
+                                            <li><a class="dropdown-item" href="#">+89</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 seperate-blk pe-0 ps-0 ps-md-3">
+                            <div>
+                                <div class="form-group file-upload"> 
+                                    <div>
+                                        <label for="formFile" class="form-label">Default file input example</label>
+                                        <div class="input-holder">
+                                            <input class="form-control" type="file" id="formFile" size="60" />
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 seperate-blk px-0">
+                            <div> 
+                                <div class="form-group">
+                                    <label for="message">Message (Optional)</label>
+                                    <textarea  type="text" class="form-control" id="message" placeholder="Type heere..." name="message" rows="5"></textarea>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer px-0">
+              <button type="button" class="btn sw_bg-primary me-auto my-0">Submit Resume</button>
             </div>
           </div>
         </div>
       </div>
-  
       <!-- END: Work with Us model box
+      =================================== -->
+
+
+      <!-- START: model box
+      =================================== -->
+        <div class="modal fade" id="workWithUsModal" tabindex="-1" aria-labelledby="workWithUsModalLabel" aria-hidden="true">
+            <div class="modal-dialog form-model-ctrl">
+                <div class="modal-content ctrl-box">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="./public/img/icon/close.png" /></button>
+                    <form action="#" method="post">
+                        <div class="modal-header title-blk">
+                            <h5 class="modal-title title" id="workWithUsModalLabel">Make An Appointment</h5>
+                            <p class="m-0 title-blk__desc sw_txt-custom pt-0">Please fill out the form below to make an appointment</p>
+                        </div>
+                        <div class="modal-body ctrl-body-blk">
+                            <div class="row w-100 mx-auto">
+                                <div class="col-md-6 ps-0 pe-0 pe-md-3">
+                                    <div> 
+                                        <div class="form-group">
+                                            <label for="full-name">Full Name</label>
+                                            <input type="text" class="form-control" id="full-name" placeholder="Full name" name="full-name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pe-0 ps-0 ps-md-3 pt-3 pt-md-0">
+                                    <div> 
+                                        <div class="form-group">
+                                            <label for="email-address">Email Address</label>
+                                            <input type="text" class="form-control" id="email-address" placeholder="Email address" name="email-address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ps-0 seperate-blk pe-0 pe-md-3">
+                                    <div class="ph-no"> 
+                                        <div class="form-group">
+                                            <label for="phone-nuumber">Phone Number</label>
+                                            <input type="text" class="form-control" id="phone-nuumber" placeholder="Phone Number" name="phone-nuumber">
+                                        </div>
+                                        <div class="dropdown-holder">
+                                            <div class="dropdown">
+                                                <button class="btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">+91</button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">+45</a></li>
+                                                    <li><a class="dropdown-item" href="#">+67</a></li>
+                                                    <li><a class="dropdown-item" href="#">+89</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 seperate-blk pe-0 ps-0 ps-md-3">
+                                    <div>
+                                        <div class="form-group file-upload"> 
+                                            <div>
+                                                <label for="choose-service-type" class="form-label">Choose Service</label>
+                                                <select id="choose-service-type" class="form-select" aria-label="Choose Service">
+                                                    <option selected>Choose Service</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 seperate-blk px-0">
+                                    <div> 
+                                        <div class="form-group date-picker-select-blk">
+                                            <label for="preferred-date">Preferred Date</label>
+                                            <input type="text" class="form-control" name="preferred-date" value="10/24/1984" />
+                                            <img class="calendar-img" src="./public/img/icon/calendar.png" /> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer px-0">
+                            <button type="button" class="btn sw_bg-primary me-auto my-0">Make An Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <!-- END: model box
+      =================================== -->
+
+      <!-- START: Thankyou model box
+      =================================== -->
+        <div class="modal fade" id="thankyouModal" tabindex="-1" aria-labelledby="thankyouModalLabel" aria-hidden="true">
+            <div class="modal-dialog form-model-ctrl">
+                <div class="modal-content ctrl-box">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="./public/img/icon/close.png" /></button>
+                    <div class="thakyou-data">
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center thankyou-inner-data">
+                            <figure class="m-0 tick-icon">
+                                <img src="./public/img/icon/tick.png" />
+                            </figure>
+                            <div class="txt-blk">
+                                <h3 class="title sw_text-green">Thank You!</h3>
+                                <p class="desc sw_txt-custom">We’ve received your submissions, and we’ll be in touch you soon!</p>
+                                <a type="button" class="btn sw_bg-primary me-auto my-0" href="#">Go To Homepage</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- END: Thankyou model box
+      =================================== -->
+      <!-- START: Appoinment Thankyou model box
+      =================================== -->
+        <div class="modal fade" id="appoinmentThankyouModal" tabindex="-1" aria-labelledby="appoinmentThankyouModalLabel" aria-hidden="true">
+            <div class="modal-dialog form-model-ctrl">
+                <div class="modal-content ctrl-box">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="./public/img/icon/close.png" /></button>
+                    <div class="thakyou-data">
+                        <div class="d-flex flex-column justify-content-center align-items-center text-center thankyou-inner-data">
+                            <figure class="m-0 tick-icon">
+                                <img src="./public/img/icon/tick.png" />
+                            </figure>
+                            <div class="txt-blk">
+                                <h3 class="title sw_text-green">Your Appointment Request Has Been Sent!</h3>
+                                <p class="desc sw_txt-custom">Our executive will contact you soon for further confirmation.Thank you for your time!</p>
+                                <a type="button" class="btn sw_bg-primary me-auto my-0" href="#">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- END: Appoinment Thankyou model box
       =================================== -->
 
 
@@ -1027,6 +1220,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- END: Bootstrap5 script
     ====================== -->
+    <!-- START: Date range picker JavaScript Bundle with Popper
+    ====================== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- START: Date range picker JavaScript Bundle with Popper
+    ====================== -->
     <script src="./public/js/header.js"></script>
+    <script>
+        $(function() {
+          $('input[name="preferred-date"]').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            minYear: 1901,
+            maxYear: parseInt(moment().format('YYYY'),10)
+          });
+        });
+    </script>
 </body>
 </html>

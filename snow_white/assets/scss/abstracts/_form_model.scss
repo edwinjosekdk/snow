@@ -1,0 +1,250 @@
+
+
+
+
+
+.form-model-ctrl {
+
+    @include media-min-lg {
+        min-width: 866px;
+    }
+    @include  media-max-lg {
+        min-width: 75%;
+    }
+    .ctrl-box {
+        padding: 40px;
+        border-radius: 0px;
+        .title-blk {
+            display: flex;
+            flex-flow: column wrap;
+            padding: 0;
+            align-items: flex-start;
+            max-width: 582px;
+            .title {
+                @include print-styles($primary_font-Black);
+                font-size: 28px;
+                @include media-max-md {
+                    font-size: 25px;
+                }
+            }
+            &__desc {
+                @include print-styles($secondary_font-light);
+                font-size: 20px;
+                padding-top: 16px;
+                @include media-max-md {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .ctrl-body-blk {
+        padding: 20px 0px 0px;
+        .form-group,
+        .input-group,
+        .form-label {
+            label {
+                font-size: 16px;
+                line-height: 24px;
+                @include print-styles($secondary_font-regular);
+                margin-bottom: 9px;
+            }
+            input,
+            select {
+                max-width: 378px;
+                // padding: 16px;
+                font-size: 16px;
+                height: 48px;
+                margin-right: 0px;
+                &:focus {
+                    box-shadow: unset;
+                }
+                @include media-max-md {
+                    max-width: 100%;
+                }
+            }
+        }
+        .input-group {
+            .btn-label,
+            .dropdown-toggle {
+                border: 1px solid #ced4da;
+            }
+        }
+        .ph-no {
+            position: relative;
+            input {
+                padding-left: 65px;
+            }
+            .dropdown {
+                max-width: unset;
+                .dropdown-menu {
+                    max-width: 60px;
+                    min-width: unset;
+                    text-align: center;
+                    .dropdown-item {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .dropdown-toggle {
+                max-width: 50px;
+                border: 1px solid #ced4da;
+            }
+            .dropdown-holder {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                .dropdown-toggle {
+                    max-width: 50px;
+                    height: 48px;
+                    font-size: 16px;
+                    @include print-styles($secondary_font-regular);
+                    color: #ddd78d;
+                }
+            }
+        }
+        .file-upload {
+            input {
+                // opacity: 0;
+            }
+            .input-holder {
+                position: relative;
+                border: 1px solid #ced4da;
+                border-radius: 6px;
+                input {
+                    border-color: transparent;
+                }
+                &:after {
+                    content: 'Browse';
+                    position: absolute;
+                    // height: 48px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    top: 50%;
+                    padding: 9px 23px 10px;
+                    transform: translate(4px,-50%);
+                    background: #DDD78D;
+                    border-radius: 6px;
+                    color: #fff;
+                    @include print-styles($secondary_font-bold);
+                }
+            }
+        }
+    }
+    .seperate-blk {
+        padding-top: 27px;
+        @include media-max-md {
+            padding-top: 1rem;
+        }
+    }
+}
+
+
+.modal-dialog {
+    position: relative;
+    .btn-close {
+        position: absolute;
+        background: unset;
+        width: 14px;
+        height: 14px;
+        padding: 0;
+        opacity: 1;
+        right: 0;
+        top: 0;
+        transform: translate(-30px,30px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .modal-footer {
+        padding-top: 40px;
+        padding-bottom: 0;
+        @include media-max-md {
+            padding-top: 20px;
+        }
+    }
+}
+
+
+.thakyou-data {
+    min-height: 459px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-max-md {
+        min-height: 359px;
+    }
+    .thankyou-inner-data {
+        max-width: 554px;
+    }
+    .tick-icon {
+        width: 86px;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #062f2b;
+        border-radius: 0.25px;
+    }
+    .txt-blk {
+        padding-top: 32px;
+        .title {
+            @include print-styles($primary_font-bold);
+            font-size: 28px;
+            margin: 0;
+            @include media-max-md {
+                font-size: 20px;
+            }
+        }
+        .desc {
+            padding: 10px 0 20px;
+            margin: 0;
+            @include print-styles($secondary_font-regular);
+            font-size: 20px;
+            @include media-max-md {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.date-picker-select-blk {
+    position: relative;
+    input  {
+        padding-right: 60px;
+    }
+    .calendar-img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-31px,30%);
+        cursor: pointer;
+    }
+}
+
+.daterangepicker  {
+    &.show-calendar {
+        max-width: 376px !important;
+    }
+    .drp-buttons {
+        display: flex;
+        .btn {
+            min-width: unset;
+            min-height: unset;
+            @include print-styles($secondary_font-regular);
+            &.cancelBtn {
+                margin-left: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 4px 8px
+            }
+            &.applyBtn {
+                margin-left: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 4px 8px;
+            }
+        }
+    }
+}

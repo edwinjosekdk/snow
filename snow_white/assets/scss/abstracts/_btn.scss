@@ -23,8 +23,15 @@
     }
     &.sw_bg-primary {
         transition: all 0.3s ease-in-out;
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus-visible {
             color: map-get($bg-colors, bg-primary);
+        }
+        &:focus-visible {
+            background-color: transparent;
+            outline: unset;
+            border: 1px solid map-get($bg-colors, bg-primary);
         }
     }
 }
