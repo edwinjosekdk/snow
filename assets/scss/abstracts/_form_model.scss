@@ -72,19 +72,19 @@
         .ph-no {
             position: relative;
             input {
-                padding-left: 65px;
+                padding-left: 87px;
             }
-            .dropdown {
-                max-width: unset;
-                .dropdown-menu {
-                    max-width: 60px;
-                    min-width: unset;
-                    text-align: center;
-                    .dropdown-item {
-                        font-size: 13px;
-                    }
-                }
-            }
+            // .dropdown {
+            //     max-width: unset;
+            //     .dropdown-menu {
+            //         max-width: 60px;
+            //         min-width: unset;
+            //         text-align: center;
+            //         .dropdown-item {
+            //             font-size: 13px;
+            //         }
+            //     }
+            // }
             .dropdown-toggle {
                 max-width: 50px;
                 border: 1px solid #ced4da;
@@ -93,12 +93,15 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                .dropdown-toggle {
-                    max-width: 50px;
+                select {
                     height: 48px;
                     font-size: 16px;
                     @include print-styles($secondary_font-regular);
                     color: #ddd78d;
+                }
+                .dropdown-item {
+                    font-size: 13px;
+                    color: #333;
                 }
             }
         }

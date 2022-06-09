@@ -735,21 +735,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .form-model-ctrl .ctrl-body-blk .ph-no input {
-  padding-left: 65px;
-}
-
-.form-model-ctrl .ctrl-body-blk .ph-no .dropdown {
-  max-width: unset;
-}
-
-.form-model-ctrl .ctrl-body-blk .ph-no .dropdown .dropdown-menu {
-  max-width: 60px;
-  min-width: unset;
-  text-align: center;
-}
-
-.form-model-ctrl .ctrl-body-blk .ph-no .dropdown .dropdown-menu .dropdown-item {
-  font-size: 13px;
+  padding-left: 87px;
 }
 
 .form-model-ctrl .ctrl-body-blk .ph-no .dropdown-toggle {
@@ -763,14 +749,18 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   left: 0;
 }
 
-.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder .dropdown-toggle {
-  max-width: 50px;
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder select {
   height: 48px;
   font-size: 16px;
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ddd78d;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder .dropdown-item {
+  font-size: 13px;
+  color: #333;
 }
 
 .form-model-ctrl .ctrl-body-blk .file-upload .input-holder {
