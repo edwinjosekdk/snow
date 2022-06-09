@@ -77,7 +77,7 @@
                 <div class="col-12">
                     <div class="banner-wrap__title-blk">
                         <h2 class="title-blk__title">Service is not a business; We are giving the best for you even if a word</h2>
-                        <a class="link btn sw_bg-primary" href="#">Make An Appointment</a>
+                        <button type="button" class="link btn sw_bg-primary" data-bs-toggle="modal" data-bs-target="#makeAppoinment">Make An Appointment</button>
                     </div>
                 </div>
                 <div class="col-12">
@@ -203,29 +203,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="card-blk card-blk--top">
-                        <div class="card-blk__head">
-                            <figure class="m-0">
-                                <img alt="young woman getting new hairstyle professional hair styling saloon hairdresser is massaging her head" src="./public/img/young-woman-getting-new-hairstyle-professional-hair-styling-saloon-hairdresser-is-massaging-her-head.png" />
-                            </figure>
-                        </div>
-                        <div class="card-blk__body">
-                            <h3 class="card-blk__body__title">HAIR SERVICES</h3>
-                            <p class="m-0 card-blk__body__desc sw_txt-custom">Our hair services are about the complete works, cut, color, advice, service and pampering. All of our tea…</p>
-                        </div>
-                        <div class="card-blk__footer">
-                            <a class="link btn sw_text-green border-green sw_bg-transparent sw_border-green" href="#">Read More</a>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center text-md-left pt-3 pt-md-0 bg-full-view" >
-                        <!-- <div class="card-blk__head">
-                            <figure class="m-0">
-                                <img alt="beautiful woman getting beauty treatment" src="./public/img/young-woman-getting-new-hairstyle-professional-hair-styling-saloon-hairdresser-is-massaging-her-head.png" />
-                            </figure>
-                        </div> -->
                         <div class="card-blk__body">
                             <h3 class="card-blk__body__title">HAIR SERVICES</h3>
                             <p class="m-0 card-blk__body__desc sw_txt-custom">Our hair services are about the complete works, cut, color, advice, service and pampering. All of our tea…</p>
@@ -1066,7 +1045,8 @@
                 </form>
             </div>
             <div class="modal-footer px-0">
-              <button type="button" class="btn sw_bg-primary me-auto my-0">Submit Resume</button>
+                <button type="button" class="btn sw_bg-primary me-auto my-0" data-bs-toggle="modal" data-bs-target="#thankyouModal">Submit Resume</button>
+              <!-- <button type="button" class="btn sw_bg-primary me-auto my-0">Submit Resume</button> -->
             </div>
           </div>
         </div>
@@ -1148,8 +1128,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer px-0">
-                            <button type="button" class="btn sw_bg-primary me-auto my-0">Make An Appointment</button>
+                        <div class="modal-footer px-0 border-0">
+                            <button type="button" class="btn sw_bg-primary me-auto my-0" data-bs-toggle="modal" data-bs-target="#appoinmentThankyouModal">Make An Appointment</button>
                         </div>
                     </form>
                 </div>
@@ -1172,7 +1152,7 @@
                             <div class="txt-blk">
                                 <h3 class="title sw_text-green">Thank You!</h3>
                                 <p class="desc sw_txt-custom">We’ve received your submissions, and we’ll be in touch you soon!</p>
-                                <a type="button" class="btn sw_bg-primary me-auto my-0" href="#">Go To Homepage</a>
+                                <a type="button" class="btn sw_bg-primary me-auto my-0" href="index.html">Go To Homepage</a>
                             </div>
                         </div>
                     </div>
@@ -1196,7 +1176,7 @@
                             <div class="txt-blk">
                                 <h3 class="title sw_text-green">Your Appointment Request Has Been Sent!</h3>
                                 <p class="desc sw_txt-custom">Our executive will contact you soon for further confirmation.Thank you for your time!</p>
-                                <a type="button" class="btn sw_bg-primary me-auto my-0" href="#">View All Services</a>
+                                <a type="button" class="btn sw_bg-primary me-auto my-0" href="services.html">View All Services</a>
                             </div>
                         </div>
                     </div>
