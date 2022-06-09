@@ -1,0 +1,19 @@
+
+
+
+@mixin textCountLineEllipse($lineCount) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    --webkit-line-clamp: $lineCount;
+    --webkit-box-orient: vertical;
+}
+
+
+@mixin textEllipse($setWidth) {
+    width: $setWidth;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+}

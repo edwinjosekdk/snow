@@ -1,0 +1,128 @@
+
+
+@import "./scss/mixins/variables";
+@import "./scss/abstracts/_btn.scss";
+@import "./scss/mixins/common_fun";
+@import "./scss/abstracts/header";
+@import "./scss/abstracts/footer";
+@import "./scss/abstracts/breadcrumb";
+
+
+
+
+.banner-wrap {
+    max-height: 1080px;
+    min-height: 768px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../img/close-up-beautiful-young-girl-with-perfect-clean-skin-alstroemeria-petals-looking-camera-white-background-facial-treatment-beauty-spa.png") no-repeat right top;
+    background-size: cover;
+    background-position: center;
+    
+    &.flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(768px - -105px);
+        @include media-max-xl {
+            min-height: calc(500px - -83px);
+        }
+        @include media-max-md {
+            min-height: calc(300px - -90px);
+        }
+        @include media-max-sm {
+            min-height: calc(300px - -90px);
+        }
+        .banner-wrap__center--bottom {
+            padding-top: 35px;
+        }
+    }
+
+    &__center {
+        max-width: 903px;
+        margin: 0 auto;
+        @include media-max-lg {
+            max-width: 458px;
+        }
+        
+        &--bottom {
+            padding-top: 14rem;
+        }
+    }
+    &__title-blk {
+        max-width: 903px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        .link {
+            margin-top: 40px;
+        }
+        
+    }
+    .title-blk {
+        &__title {
+            @include print-styles($primary_font-bold);
+            font-size: 72px;
+            color: #FFFFFF;
+            text-align: center;
+            @include media-max-xl {
+                font-size: 50px;
+            }
+            @include media-max-lg {
+                font-size: 37px;
+            }
+            @include media-max-md {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+.appointment-wrap {
+    padding: 136px 0 0;
+    @include media-max-lg {
+        padding: 100px 0 0;
+    }
+    @include media-max-sm {
+        padding: 75px 0 0;
+    }
+    .appointment-sec {
+        width: 100%;
+        min-height: 1200px;
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media-max-xl {
+            min-height: 80vh;
+        }
+        .txt {
+            @include print-styles($secondary_font-regular);
+            margin-bottom: 0;
+            font-size: 72px;
+            @include media-max-xl {
+                font-size: 50px;
+            }
+            @include media-max-lg {
+                font-size: 37px;
+            }
+            @include media-max-md {
+                font-size: 25px;
+            }
+        }
+    }
+    .appointment-link-blk {
+        padding-top: 48px;
+    }
+}
+
+
+.footer-wrap {
+    @include media-max-xl {
+        margin-top: 100px;
+    }
+}
