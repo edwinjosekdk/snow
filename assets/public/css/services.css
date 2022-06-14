@@ -1,4 +1,45 @@
 @import url("https://use.typekit.net/wiu0hze.css");
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-ExtraLight.woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-ExtraBold.woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
 .btn {
   border-radius: 1.5px;
   padding: 11px 25px 5px;
@@ -167,7 +208,8 @@ header .nav-bar-mob-view .nav-bar-blk {
 header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link {
   color: #fff;
   text-decoration: none;
-  font-family: "Noto Sans Display", sans-serif;
+  font-size: 20px;
+  font-family: "Pulp Display";
   font-weight: 500;
   font-style: normal;
 }
@@ -185,7 +227,7 @@ header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link.active {
 }
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -198,8 +240,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -266,7 +308,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .footer-wrap .footer-box .title {
   margin: 0;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   color: #DDD78D;
@@ -306,15 +348,23 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box div {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box span {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
+}
+
+@media (min-width: 1200px) {
+  .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box span {
+    max-width: 152px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -339,8 +389,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link a {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
   text-decoration: none;
   color: #fff;
@@ -350,14 +401,14 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .footer-wrap .footer-box .footer-link-blk .list-link .office-time {
   color: #fff;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link .contact-blk {
   position: relative;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
 }
@@ -427,7 +478,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .breadcrumb-blk__path {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -562,9 +613,10 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data span {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -602,8 +654,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   border: 0px;
   border-bottom: 4px solid transparent;
   padding-top: 6px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -616,6 +668,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .tab-wrap .nav-link.active {
   color: #052F2B;
   border-color: #052F2B;
+  font-family: "Pulp Display";
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (max-width: 1200px) {
@@ -632,6 +687,333 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   .tab-wrap .tab-content {
     padding-top: 0px;
   }
+}
+
+@media (min-width: 992px) {
+  .form-model-ctrl {
+    min-width: 866px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form-model-ctrl {
+    min-width: 75%;
+  }
+}
+
+.form-model-ctrl .ctrl-box {
+  padding: 40px;
+  border-radius: 0px;
+}
+
+.form-model-ctrl .ctrl-box .title-blk {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+  align-items: flex-start;
+  max-width: 582px;
+  border: 0px;
+}
+
+.form-model-ctrl .ctrl-box .title-blk .title {
+  font-family: playfair-display, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-box .title-blk .title {
+    font-size: 25px;
+  }
+}
+
+.form-model-ctrl .ctrl-box .title-blk__desc {
+  font-family: "Pulp Display";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-box .title-blk__desc {
+    font-size: 15px;
+  }
+}
+
+.form-model-ctrl .ctrl-body-blk {
+  padding: 20px 0px 0px;
+}
+
+.form-model-ctrl .ctrl-body-blk .form-group label,
+.form-model-ctrl .ctrl-body-blk .input-group label,
+.form-model-ctrl .ctrl-body-blk .form-label label {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Pulp Display";
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.form-model-ctrl .ctrl-body-blk .form-group input,
+.form-model-ctrl .ctrl-body-blk .form-group select,
+.form-model-ctrl .ctrl-body-blk .input-group input,
+.form-model-ctrl .ctrl-body-blk .input-group select,
+.form-model-ctrl .ctrl-body-blk .form-label input,
+.form-model-ctrl .ctrl-body-blk .form-label select {
+  max-width: 378px;
+  font-size: 16px;
+  height: 48px;
+  margin-right: 0px;
+}
+
+.form-model-ctrl .ctrl-body-blk .form-group input:focus,
+.form-model-ctrl .ctrl-body-blk .form-group select:focus,
+.form-model-ctrl .ctrl-body-blk .input-group input:focus,
+.form-model-ctrl .ctrl-body-blk .input-group select:focus,
+.form-model-ctrl .ctrl-body-blk .form-label input:focus,
+.form-model-ctrl .ctrl-body-blk .form-label select:focus {
+  box-shadow: unset;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-body-blk .form-group input,
+  .form-model-ctrl .ctrl-body-blk .form-group select,
+  .form-model-ctrl .ctrl-body-blk .input-group input,
+  .form-model-ctrl .ctrl-body-blk .input-group select,
+  .form-model-ctrl .ctrl-body-blk .form-label input,
+  .form-model-ctrl .ctrl-body-blk .form-label select {
+    max-width: 100%;
+  }
+}
+
+.form-model-ctrl .ctrl-body-blk .input-group .btn-label,
+.form-model-ctrl .ctrl-body-blk .input-group .dropdown-toggle {
+  border: 1px solid #ced4da;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no {
+  position: relative;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no input {
+  padding-left: 87px;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-toggle {
+  max-width: 50px;
+  border: 1px solid #ced4da;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder select {
+  height: 48px;
+  font-size: 16px;
+  font-family: "Pulp Display";
+  font-weight: 400;
+  font-style: normal;
+  color: #ddd78d;
+}
+
+.form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder .dropdown-item {
+  font-size: 13px;
+  color: #333;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder {
+  position: relative;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder input {
+  border-color: transparent;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  padding: 9px 23px 10px;
+  transform: translate(4px, -50%);
+  background: #fff;
+  border-radius: 6px;
+  color: #fff;
+  width: 109px;
+  height: 100%;
+  left: -3px;
+}
+
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder:after {
+  content: 'Browse';
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  padding: 9px 23px 10px;
+  transform: translate(4px, -50%);
+  background: #DDD78D;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Pulp Display";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.form-model-ctrl .seperate-blk {
+  padding-top: 27px;
+}
+
+@media (max-width: 767px) {
+  .form-model-ctrl .seperate-blk {
+    padding-top: 1rem;
+  }
+}
+
+.modal-dialog {
+  position: relative;
+}
+
+.modal-dialog .btn-close {
+  position: absolute;
+  background: unset;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  opacity: 1;
+  right: 0;
+  top: 0;
+  transform: translate(-30px, 30px);
+}
+
+.modal-dialog .btn-close img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-dialog .modal-footer {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog .modal-footer {
+    padding-top: 20px;
+  }
+}
+
+.thakyou-data {
+  min-height: 459px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .thakyou-data {
+    min-height: 359px;
+  }
+}
+
+.thakyou-data .thankyou-inner-data {
+  max-width: 554px;
+}
+
+.thakyou-data .tick-icon {
+  width: 86px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #062f2b;
+  border-radius: 0.25px;
+}
+
+.thakyou-data .txt-blk {
+  padding-top: 32px;
+}
+
+.thakyou-data .txt-blk .title {
+  font-family: playfair-display, serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .thakyou-data .txt-blk .title {
+    font-size: 20px;
+  }
+}
+
+.thakyou-data .txt-blk .desc {
+  padding: 10px 0 20px;
+  margin: 0;
+  font-family: "Pulp Display";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .thakyou-data .txt-blk .desc {
+    font-size: 16px;
+  }
+}
+
+.date-picker-select-blk {
+  position: relative;
+}
+
+.date-picker-select-blk input {
+  padding-right: 60px;
+}
+
+.date-picker-select-blk .calendar-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-31px, 30%);
+  cursor: pointer;
+}
+
+.daterangepicker.show-calendar {
+  max-width: 376px !important;
+}
+
+.daterangepicker .drp-buttons {
+  display: flex;
+}
+
+.daterangepicker .drp-buttons .btn {
+  min-width: unset;
+  min-height: unset;
+  font-family: "Pulp Display";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.daterangepicker .drp-buttons .btn.cancelBtn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.daterangepicker .drp-buttons .btn.applyBtn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
 }
 
 .banner-wrap {
@@ -734,9 +1116,17 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   padding: 0;
   color: #052F2B;
   border: 0;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 20px;
+  font-family: "Pulp Display";
+  font-weight: 300;
   font-style: normal;
+  text-decoration: unset;
+}
+
+@media (max-width: 767px) {
+  .services-wrap-holder .read-more-txt {
+    font-size: 18px;
+  }
 }
 
 .services-wrap-holder .gallery-sec .title--sec-title {
@@ -744,8 +1134,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .services-wrap-holder .gallery-sec .sec-title-desc {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
   font-size: 22px;
   color: #a2abb0;
@@ -789,7 +1179,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .services-wrap-holder .gallery-item-blk .item-data__title {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -803,7 +1193,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .services-wrap-holder .gallery-item-blk .item-data__time {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
@@ -816,8 +1206,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .services-wrap-holder .gallery-item-blk .item-data__dtaile {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 300;
   font-style: normal;
   padding-top: 24px !important;
   font-size: 20px;
@@ -875,8 +1265,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   color: #a2abb0;
   font-size: 20px;
   cursor: pointer;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 300;
   font-style: normal;
 }
 

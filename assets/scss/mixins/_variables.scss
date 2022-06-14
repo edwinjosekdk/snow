@@ -15,37 +15,37 @@
 // ====================================
 $primary_font-regular: (
     font-family: $primary_font,
-    font-weight: 400,
+    font-weight: $font-regular,
     font-style: normal
 );
 
 $primary_font-regular-italic: (
     font-family: $primary_font,
-    font-weight: 400,
+    font-weight: $font-regular,
     font-style: italic
 );
 
 $primary_font-bold: (
     font-family: $primary_font,
-    font-weight: 700,
+    font-weight: $font-bold,
     font-style: normal
 );
 
 $primary_font-bold-italic: (
     font-family: $primary_font,
-    font-weight: 700,
+    font-weight: $font-bold,
     font-style: italic
 );
 
 $primary_font-Black: (
     font-family: $primary_font,
-    font-weight: 900,
+    font-weight: $font-black,
     font-style: normal
 );
 
 $primary_font-Black-italic: (
     font-family: $primary_font,
-    font-weight: 900,
+    font-weight: $font-black,
     font-style: normal
 );
 
@@ -56,37 +56,42 @@ $primary_font-Black-italic: (
 // ====================================
 $secondary_font-thin: (
     font-family: $secondary_font,
-    font-weight: 100,
+    font-weight: $font-thin,
+    font-style: normal
+);
+$secondary_font-extralight: (
+    font-family: $secondary_font,
+    font-weight: $font-extralight,
     font-style: normal
 );
 $secondary_font-light: (
     font-family: $secondary_font,
-    font-weight: 300,
+    font-weight: $font-light,
     font-style: normal
 );
 $secondary_font-regular: (
     font-family: $secondary_font,
-    font-weight: 400,
+    font-weight: $font-regular,
     font-style: normal
 );
 $secondary_font-medium: (
     font-family: $secondary_font,
-    font-weight: 500,
+    font-weight: $font-medium,
     font-style: normal
 );
 $secondary_font-semi-bold: (
     font-family: $secondary_font,
-    font-weight: 600,
+    font-weight: $font-semibold,
     font-style: normal
 );
 $secondary_font-bold: (
     font-family: $secondary_font,
-    font-weight: 700,
+    font-weight: $font-bold,
     font-style: normal
 );
 $secondary_font-extra-bold: (
     font-family: $secondary_font,
-    font-weight: 800,
+    font-weight: $font-extrabold,
     font-style: normal
 );
 // END: Secondary Font ==============

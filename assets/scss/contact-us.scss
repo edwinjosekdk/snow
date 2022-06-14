@@ -136,6 +136,11 @@
         .text-desc {
             padding-top: 20px;
             padding-bottom: 0px;
+            font-size: 18px;
+            @include print-styles($secondary_font-light);
+            @include media-max-md {
+                font-size: 16px;
+            }
         }
     }
     .form-model-ctrl {

@@ -7,6 +7,7 @@
 @import "./abstracts/footer";
 @import "./abstracts/breadcrumb";
 @import "./abstracts/tab";
+@import "./abstracts/form_model";
 
 
 
@@ -89,14 +90,19 @@
         padding: 0;
         color: #052F2B;
         border: 0;
-        @include print-styles($secondary_font-regular);
+        font-size: 20px;
+        @include print-styles($secondary_font-light);
+        text-decoration: unset;
+        @include media-max-md {
+            font-size: 18px;
+        }
     }
     .gallery-sec {
         .title--sec-title {
             padding-bottom: 25px;
         }
         .sec-title-desc {
-            @include print-styles($secondary_font-regular);
+            @include print-styles($secondary_font-extralight);
             font-size: 22px;
             color:  #a2abb0;
             text-align: center;
@@ -140,7 +146,7 @@
                 }
             }
             &__dtaile {
-                @include print-styles($secondary_font-regular);
+                @include print-styles($secondary_font-light);
                 padding-top: 24px !important;
                 font-size: 20px;
                 @include media-max-lg {
@@ -192,7 +198,7 @@
             color: #a2abb0;
             font-size: 20px;
             cursor: pointer;
-            @include print-styles($secondary_font-regular);
+            @include print-styles($secondary_font-light);
             @include media-max-lg {
                 font-size: 13px;
             }

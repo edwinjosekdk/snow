@@ -51,6 +51,8 @@
         flex-flow: column wrap;
         .link {
             margin-top: 40px;
+            font-size: 20px;
+            @include print-styles($primary_font-bold);
         }
         
     }
@@ -168,7 +170,7 @@
         }
         .details-blk{
             @include media-min-lg {
-                max-width: 551px;
+                max-width: 548px;
             }
             .title {
                 @include print-styles($primary_font-bold);
@@ -191,9 +193,9 @@
             .desc {
                 padding: 25px 0 0;
                 margin: 0;
-                font-size: 21px;
+                font-size: 22px;
                 line-height: 36px;
-                @include print-styles($secondary_font-regular);
+                @include print-styles($secondary_font-extralight);
                 @include media-max-xl {
                     font-size: 16px;
                     padding-top: 0px;
@@ -215,7 +217,7 @@
                     padding-top: 25px;
                 }
                 @include media-min-lg {
-                    max-width: 150px;
+                    max-width: 160px;
                 }
                 &:nth-child(even) {
                     @include media-max-lg {
@@ -238,8 +240,8 @@
                     display: block;
                     color: #052F2B;
                     line-height: 36px;
-                    font-size: 18px;
-                    @include print-styles($secondary_font-regular);
+                    font-size: 20px;
+                    @include print-styles($secondary_font-extralight);
                     @include media-max-xl {
                         line-height: 24px;
                         font-size: 11px;
@@ -305,7 +307,11 @@
         .desc_txt {
             color: #DDD78D;
             margin: 0;
-            @include print-styles($secondary_font-regular);
+            @include print-styles($secondary_font-extralight);
+            font-size: 22px;
+            @include media-max-md{
+                font-size: 18px;
+            }
             &:nth-child(even) {
                 padding: 24px 0px 0px;
             }
@@ -315,6 +321,8 @@
         }
         .link {
             margin-top: 24px;
+            @include print-styles($primary_font-bold);
+            font-size: 20px;
             @include media-max-lg {
                 text-align: center;
                 max-width: 256px;
@@ -417,7 +425,7 @@
             z-index: -1;
         }
         .card-blk__footer {
-            margin-top: unset;
+            margin-top: 20px;
             position: relative;
             z-index: 2;
         }
@@ -514,7 +522,7 @@
                 padding-top: 20px;
             }
             &__title {
-                @include print-styles($secondary_font-bold);
+                @include print-styles($secondary_font-regular);
                 margin: 0;
                 font-size: 28px;
                 line-height: 36px;
@@ -525,11 +533,12 @@
             }
             &__desc {
                 padding: 15px 0;
-                @include print-styles($secondary_font-light);
-                font-size: 20px;
+                @include print-styles($secondary_font-extralight);
+                font-size: 22px;
                 line-height: 32px;
                 @include  textCountLineEllipse(3);
                 text-align: left;
+                max-height: 115px;
                 @include media-max-lg {
                     font-size: 16px;
                 }
@@ -537,8 +546,10 @@
         }
         &__footer {
             transition: all 0.3s ease-in-out;
-            margin-top: auto;
+            margin-top: 20px;
             .link {
+                @include print-styles($primary_font-regular);
+                font-size: 14px;
                 padding: 6px 14px;
                 min-width: unset;
             }
@@ -547,6 +558,10 @@
     .view-service-blk {
         text-align: center;
         padding-top: 48px;
+        .link {
+            @include print-styles($primary_font-bold);
+            font-size: 20px;
+        }
     }
 }
 
@@ -591,18 +606,25 @@
             }
         }
         .desc {
-            @include print-styles($secondary_font-regular);
+            @include print-styles($secondary_font-extralight);
             text-align: center;
             color: #DDD78D;
             font-size: 28px;
             line-height: 36px;
             padding-bottom: 24px;
             margin: 0px;
+            max-width: 630px;
             @include media-max-lg {
                 font-size: 25px;
             }
             @include media-max-md {
                 font-size: 16px;
+            }
+        }
+        .model-popup-btn {
+            &.link {
+                @include print-styles($primary_font-bold);
+                font-size: 20px;
             }
         }
     }
@@ -686,7 +708,7 @@
                             }
                         }
                         .details {
-                            @include print-styles($secondary_font-regular);
+                            @include print-styles($secondary_font-extralight);
                             font-size: 16px;
                             margin: 0;
                             @include media-max-xl {
@@ -695,8 +717,8 @@
                         }
                     }
                     .testimonial-disc {
-                        @include print-styles($secondary_font-regular);
-                        font-size: 22px;
+                        @include print-styles($secondary_font-extralight);
+                        font-size: 18px;
                         line-height: 32px;
                         padding-top: 40px;
                         @include media-max-md {

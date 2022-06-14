@@ -1,4 +1,45 @@
 @import url("https://use.typekit.net/wiu0hze.css");
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-ExtraLight.woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Pulp Display";
+  src: url("../font/PulpDisplay/PulpDisplay-ExtraBold.woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
 .btn {
   border-radius: 1.5px;
   padding: 11px 25px 5px;
@@ -176,9 +217,10 @@
 }
 
 .gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data span {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -216,8 +258,8 @@
   border: 0px;
   border-bottom: 4px solid transparent;
   padding-top: 6px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -230,6 +272,9 @@
 .tab-wrap .nav-link.active {
   color: #052F2B;
   border-color: #052F2B;
+  font-family: "Pulp Display";
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (max-width: 1200px) {
@@ -343,7 +388,8 @@ header .nav-bar-mob-view .nav-bar-blk {
 header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link {
   color: #fff;
   text-decoration: none;
-  font-family: "Noto Sans Display", sans-serif;
+  font-size: 20px;
+  font-family: "Pulp Display";
   font-weight: 500;
   font-style: normal;
 }
@@ -361,7 +407,7 @@ header .nav-bar-mob-view .nav-bar-blk .nav-bar-list .nav-bar-link.active {
 }
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -374,8 +420,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
 
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   font-size: 20px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -442,7 +488,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .footer-wrap .footer-box .title {
   margin: 0;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   color: #DDD78D;
@@ -482,15 +528,23 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box div {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box span {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
+}
+
+@media (min-width: 1200px) {
+  .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box span {
+    max-width: 152px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -515,8 +569,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link a {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
   text-decoration: none;
   color: #fff;
@@ -526,14 +581,14 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .footer-wrap .footer-box .footer-link-blk .list-link .office-time {
   color: #fff;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link .contact-blk {
   position: relative;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
 }
@@ -649,6 +704,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   padding: 0;
   align-items: flex-start;
   max-width: 582px;
+  border: 0px;
 }
 
 .form-model-ctrl .ctrl-box .title-blk .title {
@@ -665,7 +721,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .form-model-ctrl .ctrl-box .title-blk__desc {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 300;
   font-style: normal;
   font-size: 20px;
@@ -687,8 +743,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .form-model-ctrl .ctrl-body-blk .form-label label {
   font-size: 16px;
   line-height: 24px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 500;
   font-style: normal;
   margin-bottom: 9px;
 }
@@ -752,7 +808,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .form-model-ctrl .ctrl-body-blk .ph-no .dropdown-holder select {
   height: 48px;
   font-size: 16px;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   color: #ddd78d;
@@ -773,6 +829,20 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   border-color: transparent;
 }
 
+.form-model-ctrl .ctrl-body-blk .file-upload .input-holder:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  padding: 9px 23px 10px;
+  transform: translate(4px, -50%);
+  background: #fff;
+  border-radius: 6px;
+  color: #fff;
+  width: 109px;
+  height: 100%;
+  left: -3px;
+}
+
 .form-model-ctrl .ctrl-body-blk .file-upload .input-holder:after {
   content: 'Browse';
   position: absolute;
@@ -785,7 +855,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   background: #DDD78D;
   border-radius: 6px;
   color: #fff;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 700;
   font-style: normal;
 }
@@ -865,7 +935,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .thakyou-data .txt-blk .title {
   font-family: playfair-display, serif;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   font-size: 28px;
   margin: 0;
@@ -880,8 +950,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .thakyou-data .txt-blk .desc {
   padding: 10px 0 20px;
   margin: 0;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
   font-size: 20px;
 }
@@ -919,7 +989,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .daterangepicker .drp-buttons .btn {
   min-width: unset;
   min-height: unset;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
 }
@@ -985,6 +1055,10 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .banner-wrap__title-blk .link {
   margin-top: 40px;
+  font-size: 20px;
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .banner-wrap .title-blk__title {
@@ -1036,7 +1110,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .banner-wrap .banner-social-media-blk .title h3 {
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   padding-bottom: 25px;
@@ -1152,7 +1226,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 @media (min-width: 992px) {
   .about-us-wrap .about-us__details .details-blk {
-    max-width: 551px;
+    max-width: 548px;
   }
 }
 
@@ -1189,10 +1263,10 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .about-us-wrap .about-us__details .details-blk .desc {
   padding: 25px 0 0;
   margin: 0;
-  font-size: 21px;
+  font-size: 22px;
   line-height: 36px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -1229,7 +1303,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 @media (min-width: 992px) {
   .about-us-wrap .about-us__details .details-blk .list {
-    max-width: 150px;
+    max-width: 160px;
   }
 }
 
@@ -1261,9 +1335,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   display: block;
   color: #052F2B;
   line-height: 36px;
-  font-size: 18px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-size: 20px;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -1342,9 +1416,16 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .choose-us-wrap .des_blk .desc_txt {
   color: #DDD78D;
   margin: 0;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
+  font-size: 22px;
+}
+
+@media (max-width: 767px) {
+  .choose-us-wrap .des_blk .desc_txt {
+    font-size: 18px;
+  }
 }
 
 .choose-us-wrap .des_blk .desc_txt:nth-child(even) {
@@ -1359,6 +1440,10 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .choose-us-wrap .des_blk .link {
   margin-top: 24px;
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
 }
 
 @media (max-width: 992px) {
@@ -1478,7 +1563,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .service-wrap .bg-full-view .card-blk__footer {
-  margin-top: unset;
+  margin-top: 20px;
   position: relative;
   z-index: 2;
 }
@@ -1580,8 +1665,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .service-wrap .card-blk__body__title {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 700;
+  font-family: "Pulp Display";
+  font-weight: 400;
   font-style: normal;
   margin: 0;
   font-size: 28px;
@@ -1597,10 +1682,10 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .service-wrap .card-blk__body__desc {
   padding: 15px 0;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 300;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 32px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1608,6 +1693,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   --webkit-line-clamp: $lineCount;
   --webkit-box-orient: vertical;
   text-align: left;
+  max-height: 115px;
 }
 
 @media (max-width: 992px) {
@@ -1618,10 +1704,14 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .service-wrap .card-blk__footer {
   transition: all 0.3s ease-in-out;
-  margin-top: auto;
+  margin-top: 20px;
 }
 
 .service-wrap .card-blk__footer .link {
+  font-family: playfair-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
   padding: 6px 14px;
   min-width: unset;
 }
@@ -1629,6 +1719,13 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 .service-wrap .view-service-blk {
   text-align: center;
   padding-top: 48px;
+}
+
+.service-wrap .view-service-blk .link {
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .work-us-wrap {
@@ -1696,8 +1793,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .work-us-wrap .work-us-blk .desc {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
   text-align: center;
   color: #DDD78D;
@@ -1705,6 +1802,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   line-height: 36px;
   padding-bottom: 24px;
   margin: 0px;
+  max-width: 630px;
 }
 
 @media (max-width: 992px) {
@@ -1717,6 +1815,13 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   .work-us-wrap .work-us-blk .desc {
     font-size: 16px;
   }
+}
+
+.work-us-wrap .work-us-blk .model-popup-btn.link {
+  font-family: playfair-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .testimonial-wrap {
@@ -1842,8 +1947,8 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .testimonial-wrap .testimonial-sec #testimonial-carousel-controls .item-inner__txt-blk .testimonial-detailer .details {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
   font-size: 16px;
   margin: 0;
@@ -1856,10 +1961,10 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .testimonial-wrap .testimonial-sec #testimonial-carousel-controls .item-inner__txt-blk .testimonial-disc {
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 400;
+  font-family: "Pulp Display";
+  font-weight: 200;
   font-style: normal;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 32px;
   padding-top: 40px;
 }

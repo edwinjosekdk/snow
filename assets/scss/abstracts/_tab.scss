@@ -72,6 +72,7 @@
                     align-items: flex-end;
                     span {
                         @include print-styles($secondary_font-regular);
+                        font-size: 20px;
                     }
                     @include media-max-md {
                         font-size: 14px;
@@ -108,13 +109,14 @@
             border: 0px;
             border-bottom: 4px solid transparent;
             padding-top: 6px;
-            @include print-styles($secondary_font-regular);
+            @include print-styles($secondary_font-extralight);
             @include media-max-lg {
                 font-size: 15px;
             }
             &.active {
                 color: #052F2B;
                 border-color: #052F2B;
+                @include print-styles($secondary_font-regular);
             }
             @include media-max-xl {
                 padding-bottom: 15px;

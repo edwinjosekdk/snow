@@ -62,10 +62,15 @@
                     //     display: flex;
                     // }
                     div {
-                        @include print-styles($secondary_font-regular);
+                        font-size: 18px;
+                        @include print-styles($secondary_font-extralight);
                     }
                     span {
-                        @include print-styles($secondary_font-regular);  
+                        font-size: 18px;
+                        @include print-styles($secondary_font-extralight);
+                        @include media-min-xl {
+                            max-width: 152px;
+                        }
                         @include media-max-xl {
                             display: block;
                             text-align: start;
@@ -90,7 +95,8 @@
                     }
                 }
                 a {
-                    @include print-styles($secondary_font-regular);  
+                    font-size: 18px;
+                    @include print-styles($secondary_font-extralight);
                     text-decoration: none;
                     color: #fff;
                     display: block;

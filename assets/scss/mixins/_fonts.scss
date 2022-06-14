@@ -3,68 +3,80 @@
 
 
 $primary_font: playfair-display, serif;
-// $secondary_font: "Pulp-Display";
-$secondary_font: 'Noto Sans Display', sans-serif;;
+$secondary_font: "Pulp Display";
+// $secondary_font: 'Noto Sans Display', sans-serif;;
 
 
-$extra_light : 100;
-$light : 300;
-$regular : 400;
-$medium : 500;
-$semiBold : 600;
-$bold : 700;
-$extra_bold : 800;
+// $extra_light : 100;
+// $light : 300;
+// $regular : 400;
+// $medium : 500;
+// $semiBold : 600;
+// $bold : 700;
+// $extra_bold : 800;
+
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-regular: 400; // normal
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
 // $OutlineItalic
 
 
 
 
-// @font-face {
-//     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-ExtraLight.ttf") format("ttf");
-//     font-weight: 100;
-//     // font-style: normal;
-// }
+@font-face {
+    font-family: $secondary_font;
+    // src: url("../font/PulpDisplay/PulpDisplay-ExtraLight.woff") format("woff");
+    src: url("../font/PulpDisplay/PulpDisplay-ExtraLight.woff");
+    font-weight: $font-extralight;
+    font-style: normal;
+}
 
 
 // @font-face {
 //     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-Light.ttf") format("ttf");
+//     src: url("../font/PulpDisplay/PulpDisplay-Light.woff") format("ttf");
 //     font-weight: 300;
 //     // font-style: normal;
 // }
 
-// @font-face {
-//     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-Regular.ttf") format("ttf");
-//     font-weight: 400;
-//     // font-style: normal;
-// }
+@font-face {
+    font-family: $secondary_font;
+    // src: url("../font/PulpDisplay/PulpDisplay-Regular.ttf") format("ttf");
+    src: url("../font/PulpDisplay/PulpDisplay-Regular.woff");
+    font-weight: $font-regular;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-Medium.ttf") format("ttf");
-//     font-weight: 500;
-//     // font-style: normal;
-// }
+@font-face {
+    font-family: $secondary_font;
+    src: url("../font/PulpDisplay/PulpDisplay-Medium.woff");
+    font-weight: $font-medium;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-SemiBold.ttf") format("ttf");
-//     font-weight: 600;
-//     // font-style: normal;
-// }
+@font-face {
+    font-family: $secondary_font;
+    src: url("../font/PulpDisplay/PulpDisplay-SemiBold.woff");
+    font-weight: $font-semibold;
+    font-style: normal;
+}
 
-// @font-face {
-//     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-Bold.ttf") format("ttf");
-//     font-weight: 700;
-//     // font-style: bold;
-// }
+@font-face {
+    font-family: $secondary_font;
+    src: url("../font/PulpDisplay/PulpDisplay-Bold.woff");
+    font-weight: $font-bold;
+    // font-style: bold;
+}
 
-// @font-face {
-//     font-family: $secondary_font;
-//     src: url("../font/PulpDisplay/PulpDisplay-ExtraBold.ttf") format("ttf");
-//     font-weight: 800;
-//     // font-style: normal;
-// }
+@font-face {
+    font-family: $secondary_font;
+    src: url("../font/PulpDisplay/PulpDisplay-ExtraBold.woff");
+    font-weight: $font-extrabold;
+    font-style: normal;
+}
