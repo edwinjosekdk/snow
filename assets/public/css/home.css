@@ -214,13 +214,15 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  cursor: pointer;
 }
 
-.gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data span {
+.gallery-wrap .gallery-sec .gallery-item-blk figure .fig-cap-data .title {
   font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -2009,5 +2011,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
     right: 50%;
     transform: translateX(100%);
   }
+}
+
+.image-inner-data figure img {
+  max-height: 460px;
 }
 /*# sourceMappingURL=home.css.map */

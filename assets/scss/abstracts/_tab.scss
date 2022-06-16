@@ -70,9 +70,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: flex-end;
-                    span {
+                    cursor: pointer;
+                    .title {
                         @include print-styles($secondary_font-regular);
                         font-size: 20px;
+                        color: #fff;
                     }
                     @include media-max-md {
                         font-size: 14px;
