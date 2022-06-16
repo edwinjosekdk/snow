@@ -700,6 +700,18 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   border-radius: 0px;
 }
 
+@media (max-width: 767px) {
+  .form-model-ctrl .ctrl-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-model-ctrl .ctrl-box {
+    padding: 15px;
+  }
+}
+
 .form-model-ctrl .ctrl-box .title-blk {
   display: flex;
   flex-flow: column wrap;
@@ -2015,5 +2027,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .image-inner-data figure img {
   max-height: 460px;
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=home.css.map */

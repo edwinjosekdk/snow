@@ -11,7 +11,11 @@ function handleGalleryPopup(e){
     let getTargetEle= e.target;
     let getParentEle= getTargetEle.parentElement;
     let getImgEle= getParentEle.querySelector("img");
-    let getImagePath= getImgEle.getAttribute("src");
+    let getImagePath= getImgEle?.getAttribute("src");
+    if(!getImagePath) {
+        document.onclick();
+        return
+    }
     let getTitle= getTargetEle.querySelector(".title");
     let getShowBox= document.getElementById("galleryPopup");
     let getShowImgEle= getShowBox.querySelector(".image-inner-data img");

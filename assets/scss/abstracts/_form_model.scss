@@ -14,6 +14,12 @@
     .ctrl-box {
         padding: 40px;
         border-radius: 0px;
+        @include media-max-md {
+            padding: 20px;
+        }
+        @include media-max-sm {
+            padding: 15px;
+        }
         .title-blk {
             display: flex;
             flex-flow: column wrap;
