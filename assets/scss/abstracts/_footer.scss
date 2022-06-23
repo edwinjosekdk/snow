@@ -8,11 +8,28 @@
     background-size: cover;
     padding: 120px 0px;
     overflow-x: hidden;
+
+    // @include media-max-xl {
+    //     padding-top: 100px;
+    // }
+    // @include media-max-lg {
+    //     padding-top: 75px;
+    // }
+    // @include media-max-md {
+    //     padding-top: 50px;
+    // }
+
+
     @include media-max-xl {
         padding: 75px 0;
+        margin-top: 100px;
+    }
+    @include media-max-lg {
+        margin-top: 75px;
     }
     @include media-max-md {
         padding: 50px 0;
+        margin-top: 50px;
     }
     @include media-max-sm {
         padding: 25px 0;

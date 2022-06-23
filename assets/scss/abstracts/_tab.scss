@@ -106,7 +106,8 @@
             font-size: 20px;
             color: #a2abb0;
             margin-bottom: 0px;
-            padding-bottom: 30px;
+            // padding-bottom: 30px;
+            padding-bottom: 20px;
             line-height: unset;
             border: 0px;
             border-bottom: 4px solid transparent;
@@ -126,7 +127,8 @@
         }
     }
     .tab-content {
-        padding-top: 56px;
+        // padding-top: 56px;
+        padding-top: 96px;
         @include media-max-lg 
         {
             padding-top: 0px;

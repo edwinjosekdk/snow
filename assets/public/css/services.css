@@ -320,12 +320,20 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 @media (max-width: 1200px) {
   .footer-wrap {
     padding: 75px 0;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-wrap {
+    margin-top: 75px;
   }
 }
 
 @media (max-width: 767px) {
   .footer-wrap {
     padding: 50px 0;
+    margin-top: 50px;
   }
 }
 
@@ -687,7 +695,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   font-size: 20px;
   color: #a2abb0;
   margin-bottom: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   line-height: unset;
   border: 0px;
   border-bottom: 4px solid transparent;
@@ -718,7 +726,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 }
 
 .tab-wrap .tab-content {
-  padding-top: 56px;
+  padding-top: 96px;
 }
 
 @media (max-width: 992px) {
@@ -973,6 +981,13 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   }
 }
 
+@media (max-width: 576px) {
+  .thakyou-data {
+    min-height: unset;
+    padding: 20px 0;
+  }
+}
+
 .thakyou-data .thankyou-inner-data {
   max-width: 554px;
 }
@@ -985,6 +1000,20 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   align-items: center;
   background-color: #062f2b;
   border-radius: 0.25px;
+}
+
+@media (max-width: 1200px) {
+  .thakyou-data .tick-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .thakyou-data .tick-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .thakyou-data .txt-blk {
@@ -1081,7 +1110,6 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(768px - -105px);
 }
 
 @media (max-width: 1200px) {
@@ -1161,6 +1189,28 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   }
 }
 
+.services-wrap-holder {
+  padding-top: 129px;
+}
+
+@media (max-width: 1200px) {
+  .services-wrap-holder {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-wrap-holder {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-wrap-holder {
+    padding-top: 50px;
+  }
+}
+
 .services-wrap-holder .read-more-txt {
   background-color: transparent;
   padding: 0;
@@ -1215,6 +1265,12 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 @media (min-width: 576px) {
   .services-wrap-holder .gallery-item-blk {
     padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-wrap-holder .gallery-item-blk figure img {
+    max-width: unset !important;
   }
 }
 

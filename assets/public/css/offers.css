@@ -320,12 +320,20 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 @media (max-width: 1200px) {
   .footer-wrap {
     padding: 75px 0;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-wrap {
+    margin-top: 75px;
   }
 }
 
 @media (max-width: 767px) {
   .footer-wrap {
     padding: 50px 0;
+    margin-top: 50px;
   }
 }
 

@@ -26,7 +26,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: calc(768px - -105px);
+        // min-height: calc(768px - -105px);
         @include media-max-xl {
             min-height: calc(500px - -83px);
         }
@@ -88,7 +88,9 @@
 
 
 .contact-wrap {
-    padding: 121px 0 0px;
+    @include media-min-xl {
+        padding: 121px 0 0px;
+    }
     @include media-max-lg {
         padding-top: 0px;
     }
@@ -104,7 +106,10 @@
         }
     }
     .contact-box {
-        padding-top: 66px;
+        padding-top: 30px;
+        @include media-min-xl {
+            padding-top: 66px;
+        }
         @include media-max-lg {
             padding-top: 30px;
         }
@@ -137,6 +142,8 @@
             padding-top: 20px;
             padding-bottom: 0px;
             font-size: 18px;
+            margin-bottom: 0;
+            color: #1A2E39;
             @include print-styles($secondary_font-light);
             @include media-max-md {
                 font-size: 16px;
@@ -145,10 +152,13 @@
     }
     .form-model-ctrl {
         min-width: unset;
+        margin-left: auto;
         @include media-min-xl {
             margin-top: -31%;
+            max-width: 760px;
             position: relative;
             background: #fff;
+            box-shadow: 0 3px 32px -17px #cbcbcb;
         }
         .ctrl-box {
             @include media-min-xl {
@@ -172,8 +182,11 @@
         }
     }
     .location-blk {
+        padding-top: 60px;
         height: 466px;
-        padding-top: 136px;
+        @include media-min-xl {
+            padding-top: 136px;
+        }
         @include media-max-lg {
             padding-top: 50px;
         }
@@ -187,4 +200,26 @@
 
 .footer-wrap {
     margin-top: 0px;
+}
+#phone-nuumber {
+    padding-left: 70px;
+}
+.optional-txt {
+    @include print-styles($secondary_font-light);
+}
+.dropdown-holder {
+    select {
+        border-radius: 0 6px 6px 0px;
+        border-right: unset;
+        padding-right: 31px;
+    }
+}
+
+.thakyou-data {
+    min-height: 407px;
+    .txt-blk {
+        .desc {
+            padding: 9px 0 20px;
+        }
+    }
 }
