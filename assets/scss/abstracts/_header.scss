@@ -76,9 +76,26 @@ header {
             justify-content: space-between;
             margin: 0 0 0 auto;
             align-items: center;
-            max-width: 516px;
+            max-width: 531px;
+            @include media-max-lg {
+                max-width: 516px;
+            }
             @include media-max-md {
                 flex-direction: column;
+                margin-right: auto;
+                margin-left: unset;
+            }
+            li {
+                &:nth-child(even) {
+                    @include media-min-lg {
+                        margin: 0 40px;
+                    }
+                }
+                &:last-child {
+                    @include media-min-lg {
+                        margin-right: 0px;
+                    }
+                }
             }
             .nav-bar-list {
                 @include media-max-md {
@@ -102,12 +119,23 @@ header {
             .header-nav-call {
                 @include print-styles($secondary_font-regular);   
                 font-size: 20px;
-                line-height: 44px;
+                // line-height: 44px;
                 background: #052F2B;
                 border-radius: 44px;
-                padding: 0px 12px 4px 8px;
+                // padding: 0px 12px 4px 8px;
+                padding: 6px 25px 6px 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color: #fff;
+                @include media-max-md {
+                    justify-content: flex-start;
+                }
                 span {
+                    line-height: 24px;
+                }
+                .txt {
+                    padding-left: 9px;
                     font-size: 20px;
                     @include print-styles($secondary_font-light);
                 }

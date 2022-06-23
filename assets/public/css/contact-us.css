@@ -190,12 +190,32 @@ header .nav-bar-mob-view .nav-bar-blk {
   justify-content: space-between;
   margin: 0 0 0 auto;
   align-items: center;
-  max-width: 516px;
+  max-width: 531px;
+}
+
+@media (max-width: 992px) {
+  header .nav-bar-mob-view .nav-bar-blk {
+    max-width: 516px;
+  }
 }
 
 @media (max-width: 767px) {
   header .nav-bar-mob-view .nav-bar-blk {
     flex-direction: column;
+    margin-right: auto;
+    margin-left: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  header .nav-bar-mob-view .nav-bar-blk li:nth-child(even) {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .nav-bar-mob-view .nav-bar-blk li:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -231,14 +251,27 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  line-height: 44px;
   background: #052F2B;
   border-radius: 44px;
-  padding: 0px 12px 4px 8px;
+  padding: 6px 25px 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  header .nav-bar-mob-view .nav-bar-blk .header-nav-call {
+    justify-content: flex-start;
+  }
+}
+
 header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
+  line-height: 24px;
+}
+
+header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
+  padding-left: 9px;
   font-size: 20px;
   font-family: "Pulp Display";
   font-weight: 300;
@@ -278,7 +311,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 
 .footer-wrap {
   margin-top: 136px;
-  background: url("../img/choose-us-bg.png") no-repeat right top;
+  background: url("../img/home-bg-choose-us.svg") no-repeat right top;
   background-size: cover;
   padding: 120px 0px;
   overflow-x: hidden;
@@ -338,8 +371,13 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link--insdicator a {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid transparent;
   padding-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-wrap .footer-box .footer-link-blk .list-link--insdicator a:hover {
+  border-bottom-color: #fff;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box {
@@ -467,8 +505,6 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  border: 1px solid #fff;
 }
 
 .breadcrumb-blk ul {
@@ -1036,7 +1072,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call span {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url("../img/young-woman-with-clay-mask-her-face.png") no-repeat right top;
+  background: url("../img/contact-us/young-woman-with-clay-mask-her-face.png") no-repeat right top;
   background-size: cover;
   background-position: center;
 }
