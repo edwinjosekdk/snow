@@ -288,3 +288,28 @@
         }
     }
 }
+
+
+#phone-nuumber {
+    padding-left: 70px;
+}
+.optional-txt {
+    @include print-styles($secondary_font-light);
+}
+.dropdown-holder {
+    select {
+        border-radius: 0 6px 6px 0px;
+        border-right: unset;
+        border-radius: unset;
+        padding-right: 31px;
+    }
+}
+
+.thakyou-data {
+    min-height: 407px;
+    .txt-blk {
+        .desc {
+            padding: 9px 0 20px;
+        }
+    }
+}

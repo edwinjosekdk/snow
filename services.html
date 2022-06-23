@@ -813,7 +813,9 @@
     <div class="modal fade" id="makeAppoinment" tabindex="-1" aria-labelledby="makeAppoinmentLabel" aria-hidden="true">
         <div class="modal-dialog form-model-ctrl">
             <div class="modal-content ctrl-box">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="./public/img/icon/close.png" /></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-100 h-100" width="16.251" height="16.396" viewBox="0 0 16.251 16.396"> <g id="Group_27913" data-name="Group 27913" transform="translate(-862.289 -1019.868)"> <path id="Path_72166" data-name="Path 72166" d="M-4950.515,16492.549l-14.829,14.99" transform="translate(5828.344 -15471.978)" fill="none" stroke="#1a2e39" stroke-width="2"/> <path id="Path_72167" data-name="Path 72167" d="M-4965.344,16492.549l14.829,14.99" transform="translate(5828.344 -15471.978)" fill="none" stroke="#1a2e39" stroke-width="2"/> </g> </svg> 
+                </button>
                 <form action="#" method="post">
                     <div class="modal-header title-blk">
                         <h5 class="modal-title title" id="workWithUsModalLabel">Make An Appointment</h5>
@@ -825,7 +827,7 @@
                                 <div> 
                                     <div class="form-group">
                                         <label for="full-name">Full Name</label>
-                                        <input type="text" class="form-control" id="full-name" placeholder="Full name" name="full-name">
+                                        <input type="text" class="form-control rounded-0" id="full-name" placeholder="Full name" name="full-name">
                                     </div>
                                 </div>
                             </div>
@@ -833,7 +835,7 @@
                                 <div> 
                                     <div class="form-group">
                                         <label for="email-address">Email Address</label>
-                                        <input type="text" class="form-control" id="email-address" placeholder="Email address" name="email-address">
+                                        <input type="text" class="form-control rounded-0" id="email-address" placeholder="Email address" name="email-address">
                                     </div>
                                 </div>
                             </div>
@@ -841,7 +843,7 @@
                                 <div class="ph-no">
                                     <div class="form-group">
                                         <label for="phone-nuumber">Phone Number</label>
-                                        <input type="text" class="form-control" id="phone-nuumber" placeholder="Phone Number" name="phone-nuumber">
+                                        <input type="text" class="form-control rounded-0" id="phone-nuumber" placeholder="Phone Number" name="phone-nuumber">
                                     </div>
                                     <div class="dropdown-holder form-group">
                                         <select class="form-select" aria-label="Default select example">
@@ -858,7 +860,7 @@
                                     <div class="form-group file-upload"> 
                                         <div>
                                             <label for="choose-service-type" class="form-label">Choose Service</label>
-                                            <select id="choose-service-type" class="form-select" aria-label="Choose Service">
+                                            <select id="choose-service-type" class="form-select rounded-0" aria-label="Choose Service">
                                                 <option selected>Choose Service</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -872,7 +874,7 @@
                                 <div> 
                                     <div class="form-group date-picker-select-blk">
                                         <label for="preferred-date">Preferred Date</label>
-                                        <input type="text" class="form-control" name="preferred-date" value="10/24/1984" />
+                                        <input type="text" class="form-control rounded-0" name="preferred-date" value="10/24/1984" />
                                         <img class="calendar-img" src="./public/img/icon/calendar.png" /> 
                                     </div>
                                 </div>
@@ -893,17 +895,19 @@
     <!-- START: Appoinment Thankyou model box
     =================================== -->
     <div class="modal fade" id="appoinmentThankyouModal" tabindex="-1" aria-labelledby="appoinmentThankyouModalLabel" aria-hidden="true">
-        <div class="modal-dialog form-model-ctrl">
+        <div class="modal-dialog form-model-ctrl modal-dialog-centered">
             <div class="modal-content ctrl-box">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="./public/img/icon/close.png" /></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-100 h-100" width="16.251" height="16.396" viewBox="0 0 16.251 16.396"> <g id="Group_27913" data-name="Group 27913" transform="translate(-862.289 -1019.868)"> <path id="Path_72166" data-name="Path 72166" d="M-4950.515,16492.549l-14.829,14.99" transform="translate(5828.344 -15471.978)" fill="none" stroke="#1a2e39" stroke-width="2"/> <path id="Path_72167" data-name="Path 72167" d="M-4965.344,16492.549l14.829,14.99" transform="translate(5828.344 -15471.978)" fill="none" stroke="#1a2e39" stroke-width="2"/> </g> </svg> 
+                </button>
                 <div class="thakyou-data">
                     <div class="d-flex flex-column justify-content-center align-items-center text-center thankyou-inner-data">
-                        <figure class="m-0 tick-icon">
-                            <img src="./public/img/icon/tick.png" />
-                        </figure>
+                        <span class="m-0 tick-icon d-inline-block">
+                            <svg class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122" height="122" viewBox="0 0 122 122"> <defs> <linearGradient id="linear-gradient" x1="0.883" y1="0.147" x2="0.033" y2="0.873" gradientUnits="objectBoundingBox"> <stop offset="0" stop-color="#052f2b"/> <stop offset="1" stop-color="#1a2e39"/> </linearGradient> <filter id="Rectangle_19687" x="0" y="0" width="122" height="122" filterUnits="userSpaceOnUse"> <feOffset dy="8" input="SourceAlpha"/> <feGaussianBlur stdDeviation="6" result="blur"/> <feFlood flood-color="#052f2b" flood-opacity="0.161"/> <feComposite operator="in" in2="blur"/> <feComposite in="SourceGraphic"/> </filter> <filter id="Path_72174" x="27.551" y="28.551" width="67.549" height="52.852" filterUnits="userSpaceOnUse"> <feOffset dy="2" input="SourceAlpha"/> <feGaussianBlur stdDeviation="3" result="blur-2"/> <feFlood flood-opacity="0.239"/> <feComposite operator="in" in2="blur-2"/> <feComposite in="SourceGraphic"/> </filter> </defs> <g id="Group_28642" data-name="Group 28642" transform="translate(-994 -282)"> <g transform="matrix(1, 0, 0, 1, 994, 282)" filter="url(#Rectangle_19687)"> <rect id="Rectangle_19687-2" data-name="Rectangle 19687" width="86" height="86" rx="2" transform="translate(18 10)" fill="url(#linear-gradient)"/> </g> <g transform="matrix(1, 0, 0, 1, 994, 282)" filter="url(#Path_72174)"> <path id="Path_72174-2" data-name="Path 72174" d="M14354.408-20651.043l14.664,14.232,24.986-24.988" transform="translate(-14312.91 20702.3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7"/> </g> </g> </svg> 
+                        </span>
                         <div class="txt-blk">
                             <h3 class="title sw_text-green">Your Appointment Request Has Been Sent!</h3>
-                            <p class="desc sw_txt-custom">Our executive will contact you soon for further confirmation.Thank you for your time!</p>
+                            <p class="desc sw_txt-custom">Our executive will contact you soon for further confirmation. Thank you for your time!</p>
                             <a type="button" class="btn sw_bg-primary me-auto my-0" href="services.html">View All Services</a>
                         </div>
                     </div>

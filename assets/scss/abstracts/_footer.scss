@@ -18,6 +18,10 @@
     // @include media-max-md {
     //     padding-top: 50px;
     // }
+    .footer-ctrl {
+        max-width: 1497px;
+        margin: 0 auto;
+    }
 
 
     @include media-max-xl {
@@ -35,9 +39,18 @@
         padding: 25px 0;
     }
     .footer-logo {
-        max-width: 150px;
+        max-width: 200px;
     }
     .footer-box {
+        &--nav-link {
+            max-width: 138px;
+        }
+        &--hours {
+            // max-width: 174px;
+        }
+        &--contact-detail {
+            // max-width: 247px;
+        }
         .title {
             margin: 0;
             @include print-styles($secondary_font-regular);  
@@ -126,6 +139,7 @@
                 .office-time {
                     color: #fff;
                     @include print-styles($secondary_font-regular);
+                    font-size: 18px;
                 }
                 .contact-blk {
                     position: relative;

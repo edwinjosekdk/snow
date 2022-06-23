@@ -499,6 +499,11 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   overflow-x: hidden;
 }
 
+.footer-wrap .footer-ctrl {
+  max-width: 1497px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
   .footer-wrap {
     padding: 75px 0;
@@ -526,7 +531,11 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 }
 
 .footer-wrap .footer-logo {
-  max-width: 150px;
+  max-width: 200px;
+}
+
+.footer-wrap .footer-box--nav-link {
+  max-width: 138px;
 }
 
 .footer-wrap .footer-box .title {
@@ -632,6 +641,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   font-family: "Pulp Display";
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link .contact-blk {
@@ -1094,6 +1104,31 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   font-size: 12px;
   font-weight: bold;
   padding: 4px 8px;
+}
+
+#phone-nuumber {
+  padding-left: 70px;
+}
+
+.optional-txt {
+  font-family: "Pulp Display";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dropdown-holder select {
+  border-radius: 0 6px 6px 0px;
+  border-right: unset;
+  border-radius: unset;
+  padding-right: 31px;
+}
+
+.thakyou-data {
+  min-height: 407px;
+}
+
+.thakyou-data .txt-blk .desc {
+  padding: 9px 0 20px;
 }
 
 .banner-wrap {
@@ -2298,5 +2333,9 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   max-height: 460px;
   width: 100%;
   height: auto;
+}
+
+.gallery-sec .tab-content {
+  padding-top: 66px;
 }
 /*# sourceMappingURL=home.css.map */
