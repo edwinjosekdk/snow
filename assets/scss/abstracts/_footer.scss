@@ -1,12 +1,14 @@
 
 
-
+footer {
+    overflow-x: hidden;
+}
 
 .footer-wrap {
     margin-top: 136px;
     background: url("../img/home-bg-choose-us.svg") no-repeat right top;
     background-size: cover;
-    padding: 120px 0px;
+    padding: 128px 0px 131px;
     overflow-x: hidden;
 
     // @include media-max-xl {
@@ -19,6 +21,7 @@
     //     padding-top: 50px;
     // }
     .footer-ctrl {
+        // max-width: 1339px;
         max-width: 1497px;
         margin: 0 auto;
     }
@@ -38,18 +41,212 @@
     @include media-max-sm {
         padding: 25px 0;
     }
+    // .footer-logo {
+    //     max-width: 200px;
+    // }
+    // .footer-box {
+    //     &--nav-link {
+    //         max-width: 138px;
+    //     }
+    //     &--hours {
+    //         // max-width: 174px;
+    //     }
+    //     &--contact-detail {
+    //         // max-width: 247px;
+    //     }
+    //     .title {
+    //         margin: 0;
+    //         @include print-styles($secondary_font-regular);  
+    //         color: #DDD78D;
+    //         font-size: 18px;
+    //         // line-height: 44px;
+    //     }
+    //     .footer-link-blk {
+    //         padding-top: 26px;
+    //         .list-link {
+    //             color: #fff;
+    //             &:nth-child(even) {
+    //                 margin: 24px 0px;
+    //                 @include media-max-xl {
+    //                     margin: 12px 0px;
+    //                 }
+    //             }
+    //             &:last-child {
+    //                 // @include media-min-xl {
+    //                     margin-bottom: 0px;
+    //                 // }
+    //             }
+    //             &--insdicator {
+    //                 a {
+    //                     border-bottom: 1px solid transparent;
+    //                     padding-bottom: 5px;
+    //                     transition: all 0.3s ease-in-out;
+    //                     &:hover {
+    //                         border-bottom-color: #fff;
+    //                     }
+    //                 }
+    //             }
+    //             &.contact-icon-box {
+    //                 padding-left: 45px;
+    //                 position: relative;
+    //                 // &:before {
+    //                 //     content: "";
+    //                 //     background: url("../../../public/img/icon/message.png") no-repeat right top;
+    //                 //     width: 30px;
+    //                 //     height: 30px;
+    //                 // }
+    //                 // @include media-max-xl {
+    //                 //     display: flex;
+    //                 // }
+    //                 div {
+    //                     font-size: 18px;
+    //                     @include print-styles($secondary_font-extralight);
+    //                 }
+    //                 span {
+    //                     font-size: 18px;
+    //                     @include print-styles($secondary_font-extralight);
+    //                     @include media-min-xl {
+    //                         max-width: 152px;
+    //                     }
+    //                     @include media-max-xl {
+    //                         display: block;
+    //                         text-align: start;
+    //                     }
+    //                 }
+    //                 .icon {
+    //                     display: inline-block;
+    //                     width: 33px;
+    //                     height: 32px;
+    //                     display: flex;
+    //                     flex-direction: row;
+    //                     justify-content: center;
+    //                     align-items: center;
+    //                     position: absolute;
+    //                     left: 0;
+    //                     top: 50%;
+    //                     transform: translateY(-50%);
+    //                     // @include media-max-sm {
+    //                     //     display: none;
+    //                     // }
+
+    //                 }
+    //             }
+    //             a {
+    //                 font-size: 18px;
+    //                 @include print-styles($secondary_font-extralight);
+    //                 text-decoration: none;
+    //                 color: #fff;
+    //                 display: block;
+    //                 font-size: 18px;
+    //             }
+    //             .office-time {
+    //                 color: #fff;
+    //                 @include print-styles($secondary_font-regular);
+    //                 font-size: 18px;
+    //             }
+    //             .contact-blk {
+    //                 position: relative;
+    //                 // padding-right: 30px;
+    //                 @include print-styles($secondary_font-regular);
+    //                 span {
+    //                     position: absolute;
+    //                     right: 12px;
+    //                     top: 0;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // .footer-social-box {
+    //     @include media-min-xl {
+    //         flex-direction: column;
+    //         position: absolute;
+    //         max-width: 30px;
+    //         margin-bottom: 0;
+    //         right: 0;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //     }
+    //     @include media-max-xl {
+    //         max-width: 250px;
+    //     }
+    //     @include media-max-xl {
+    //         justify-content: space-between !important;
+    //     }
+    //     .icon-blk {
+    //         &__list {
+    //             @include media-max-xl {
+    //                 min-width: 35px;
+    //             }
+    //             &:nth-child(even) {
+    //                 @include media-min-xl {
+    //                     padding: 13px 0;
+    //                 }
+    //             }
+    //             &:last-child {
+    //                 @include media-min-xl {
+    //                     padding-bottom: 0px;
+    //                 }
+    //             }
+    //             a {
+    //                 width: 30px;
+    //                 height: 30px;
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 align-items: center;
+    //                 // border-radius: 50%;
+    //                 // border: 1px solid #fff;
+    //             }
+    //         }
+    //     }
+    // }
     .footer-logo {
         max-width: 200px;
     }
     .footer-box {
         &--nav-link {
-            max-width: 138px;
+            @include media-min-xl-med {
+                max-width: 138px;
+                margin-left: 136px;
+                width: 100%;
+            }
         }
         &--hours {
-            // max-width: 174px;
+            @include media-min-xl-med {
+                max-width: 197px;
+                margin: 0 104px;
+                width: 100%;
+                .list-link {
+                    &:nth-child(even) {
+                        margin: 11px 0px !important;
+                        @include media-max-xl {
+                            margin: 12px 0px !important;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
         }
         &--contact-detail {
-            // max-width: 247px;
+            max-width: 469px;
+            .email-phone-detail {
+                max-width: 247px;
+                min-width: 247px;
+                width: 100%;
+            }
+            .contact-icon-box {
+                &:nth-child(even) {
+                    margin: 19px 0px !important;
+                    @include media-max-xl {
+                        margin: 12px 0px !important;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
         }
         .title {
             margin: 0;
@@ -63,7 +260,7 @@
             .list-link {
                 color: #fff;
                 &:nth-child(even) {
-                    margin: 24px 0px;
+                    margin: 18px 0px;
                     @include media-max-xl {
                         margin: 12px 0px;
                     }
@@ -95,6 +292,12 @@
                     // @include media-max-xl {
                     //     display: flex;
                     // }
+                    &.contact--location {
+                        margin-left: 22px;
+                        .icon {
+                            top: 20px;
+                        }
+                    }
                     div {
                         font-size: 18px;
                         @include print-styles($secondary_font-extralight);
@@ -103,7 +306,7 @@
                         font-size: 18px;
                         @include print-styles($secondary_font-extralight);
                         @include media-min-xl {
-                            max-width: 152px;
+                            // max-width: 152px;
                         }
                         @include media-max-xl {
                             display: block;
@@ -147,7 +350,7 @@
                     @include print-styles($secondary_font-regular);
                     span {
                         position: absolute;
-                        right: 12px;
+                        right: -7px;
                         top: 0;
                     }
                 }
@@ -155,33 +358,35 @@
         }
     }
     .footer-social-box {
-        @include media-min-xl {
+        @include media-min-xxl {
             flex-direction: column;
             position: absolute;
             max-width: 30px;
             margin-bottom: 0;
-            right: 0;
+            right: -4%;
             top: 50%;
             transform: translateY(-50%);
         }
-        @include media-max-xl {
+        @include media-max-xxl {
             max-width: 250px;
+            margin-top: 20px !important;
         }
-        @include media-max-xl {
+        @include media-max-xxl {
             justify-content: space-between !important;
         }
         .icon-blk {
             &__list {
-                @include media-max-xl {
+                @include media-max-xxl {
                     min-width: 35px;
                 }
+                min-width: unset;
                 &:nth-child(even) {
-                    @include media-min-xl {
+                    @include media-min-xxl {
                         padding: 13px 0;
                     }
                 }
                 &:last-child {
-                    @include media-min-xl {
+                    @include media-min-xxl {
                         padding-bottom: 0px;
                     }
                 }

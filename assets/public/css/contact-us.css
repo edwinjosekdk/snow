@@ -309,11 +309,15 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   background-color: #052F2B;
 }
 
+footer {
+  overflow-x: hidden;
+}
+
 .footer-wrap {
   margin-top: 136px;
   background: url("../img/home-bg-choose-us.svg") no-repeat right top;
   background-size: cover;
-  padding: 120px 0px;
+  padding: 128px 0px 131px;
   overflow-x: hidden;
 }
 
@@ -352,8 +356,59 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   max-width: 200px;
 }
 
-.footer-wrap .footer-box--nav-link {
-  max-width: 138px;
+@media (min-width: 1400px) {
+  .footer-wrap .footer-box--nav-link {
+    max-width: 138px;
+    margin-left: 136px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .footer-wrap .footer-box--hours {
+    max-width: 197px;
+    margin: 0 104px;
+    width: 100%;
+  }
+  .footer-wrap .footer-box--hours .list-link:nth-child(even) {
+    margin: 11px 0px !important;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1200px) {
+  .footer-wrap .footer-box--hours .list-link:nth-child(even) {
+    margin: 12px 0px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .footer-wrap .footer-box--hours .list-link:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-wrap .footer-box--contact-detail {
+  max-width: 469px;
+}
+
+.footer-wrap .footer-box--contact-detail .email-phone-detail {
+  max-width: 247px;
+  min-width: 247px;
+  width: 100%;
+}
+
+.footer-wrap .footer-box--contact-detail .contact-icon-box:nth-child(even) {
+  margin: 19px 0px !important;
+}
+
+@media (max-width: 1200px) {
+  .footer-wrap .footer-box--contact-detail .contact-icon-box:nth-child(even) {
+    margin: 12px 0px !important;
+  }
+}
+
+.footer-wrap .footer-box--contact-detail .contact-icon-box:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-wrap .footer-box .title {
@@ -374,7 +429,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 }
 
 .footer-wrap .footer-box .footer-link-blk .list-link:nth-child(even) {
-  margin: 24px 0px;
+  margin: 18px 0px;
 }
 
 @media (max-width: 1200px) {
@@ -402,6 +457,14 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   position: relative;
 }
 
+.footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box.contact--location {
+  margin-left: 22px;
+}
+
+.footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box.contact--location .icon {
+  top: 20px;
+}
+
 .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box div {
   font-size: 18px;
   font-family: "Pulp Display";
@@ -414,12 +477,6 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
   font-family: "Pulp Display";
   font-weight: 200;
   font-style: normal;
-}
-
-@media (min-width: 1200px) {
-  .footer-wrap .footer-box .footer-link-blk .list-link.contact-icon-box span {
-    max-width: 152px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -471,47 +528,52 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 
 .footer-wrap .footer-box .footer-link-blk .list-link .contact-blk span {
   position: absolute;
-  right: 12px;
+  right: -7px;
   top: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .footer-wrap .footer-social-box {
     flex-direction: column;
     position: absolute;
     max-width: 30px;
     margin-bottom: 0;
-    right: 0;
+    right: -4%;
     top: 50%;
     transform: translateY(-50%);
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .footer-wrap .footer-social-box {
     max-width: 250px;
+    margin-top: 20px !important;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .footer-wrap .footer-social-box {
     justify-content: space-between !important;
   }
 }
 
-@media (max-width: 1200px) {
+.footer-wrap .footer-social-box .icon-blk__list {
+  min-width: unset;
+}
+
+@media (max-width: 1500px) {
   .footer-wrap .footer-social-box .icon-blk__list {
     min-width: 35px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .footer-wrap .footer-social-box .icon-blk__list:nth-child(even) {
     padding: 13px 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .footer-wrap .footer-social-box .icon-blk__list:last-child {
     padding-bottom: 0px;
   }
