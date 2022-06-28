@@ -7,9 +7,11 @@ $screen-md-mid: 800px;
 $screen-lg: 992px;
 $screen-lg-x: 1024px;
 $screen-xl: 1200px;
+$screen-minor: 1300px;
 $screen-xl-med: 1400px;
 $screen-xl-max: 1399px;
 $screen-xxl: 1500px;
+$screen-desktop: 1650px;
 $screen-four-k: 1920px;
 
 //  Mixins
@@ -53,6 +55,16 @@ $screen-four-k: 1920px;
 
 @mixin media-min-xl {
     @media (min-width: #{$screen-xl}) {
+        @content;
+    }
+}
+@mixin media-min-minor {
+    @media (min-width: #{$screen-minor}) {
+        @content;
+    }
+}
+@mixin media-max-minor {
+    @media (max-width: #{$screen-minor}) {
         @content;
     }
 }
@@ -212,8 +224,26 @@ $screen-four-k: 1920px;
         @content;
     }
 }
+@mixin media-min-desktop {
+    @media (min-width: #{$screen-desktop}) {
+        @content;
+    }
+}
+
+@mixin media-max-desktop {
+    @media (max-width: #{$screen-desktop}) {
+        @content;
+    }
+}
+
 @mixin media-min-four-k {
     @media (min-width: #{$screen-four-k}) {
+        @content;
+    }
+}
+
+@mixin media-max-four-k {
+    @media (max-width: #{$screen-four-k - 1}) {
         @content;
     }
 }

@@ -764,10 +764,10 @@
                     }
                 }
                 .carousel-control-prev {
-                    @include media-min-xl-med {
+                    @include media-min-four-k {
                         left: -15%;
                     }
-                    @include media-max-xl-med {
+                    @include media-max-four-k {
                         height: 20px;
                         bottom: -15%;
                         top: unset;
@@ -781,10 +781,10 @@
                     }
                 }
                 .carousel-control-next {
-                    @include media-min-xl-med {
+                    @include media-min-four-k {
                         right: -13%;
                     }
-                    @include media-max-xl-med {
+                    @include media-max-four-k {
                         height: 20px;
                         bottom: -15%;
                         top: unset;
