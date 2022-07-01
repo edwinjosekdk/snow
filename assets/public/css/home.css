@@ -1533,7 +1533,7 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 
 .choose-us-wrap {
   background: url("../img/home-bg-choose-us.svg") no-repeat right top;
-  background-size: 100% 68%;
+  background-size: contain;
   padding: 100px 0;
 }
 
@@ -1692,7 +1692,6 @@ header .nav-bar-mob-view .nav-bar-blk .header-nav-call .txt {
 .service-wrap .bg-full-view,
 .service-wrap .card-blk {
   margin: 0 12px;
-  padding: 0 !important;
 }
 
 .service-wrap .bg-full-view__footer,

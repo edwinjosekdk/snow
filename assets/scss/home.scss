@@ -300,7 +300,7 @@
 
 .choose-us-wrap {
     background: url("../img/home-bg-choose-us.svg") no-repeat right top;
-    background-size: 100% 68%;
+    background-size: contain;
     padding: 100px 0;
     @include media-max-lg {
         padding: 75px 0;
@@ -417,7 +417,7 @@
     .bg-full-view, 
     .card-blk {
         margin: 0 12px;
-        padding: 0 !important;
+        // padding: 0 !important;
         &__footer {
             display: flex;
             .btn {
